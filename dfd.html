@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATS - Data Flow Diagram</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 1.5rem;
+  }
+  .container { max-width: 100%; margin: 0 auto; }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; color: #f8fafc; }
+  .subtitle { color: #94a3b8; margin-bottom: 1.5rem; font-size: 1rem; }
+  .diagram-section {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155;
+    overflow: visible;
+  }
+  .diagram-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .diagram-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: #38bdf8;
+    border-radius: 2px;
+  }
+  .legend {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+    border: 1px solid #334155;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: #94a3b8;
+  }
+  .legend-box {
+    width: 18px; height: 18px; border-radius: 3px;
+  }
+  .legend-box.external { background: #7c3aed; }
+  .legend-box.process { background: #2563eb; }
+  .legend-box.store { background: #059669; }
+  .legend-box.file { background: #d97706; }
+  .legend-line { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-line .line { width: 36px; height: 2px; background: #94a3b8; }
+  .legend-line .line-dashed { width: 36px; border-top: 2px dashed #f59e0b; }
+  .legend-line .label { font-size: 0.9rem; }
+  .mermaid-wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .mermaid-wrapper svg {
+    min-width: 900px;
+    width: 100%;
+    height: auto;
+  }
+  .footer { text-align: center; color: #475569; font-size: 0.85rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #1e293b; }
+  .detail-note {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-left: 3px solid #38bdf8;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+  .detail-note strong { color: #e2e8f0; }
+  .detail-note code {
+    background: #1e293b;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #38bdf8;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th { text-align: left; padding: 0.75rem 1rem; color: #94a3b8; border-bottom: 2px solid #334155; }
+  td { padding: 0.6rem 1rem; border-bottom: 1px solid #1e293b; }
+  td:first-child { color: #38bdf8; font-weight: 600; }
+  td:nth-child(2) { color: #f8fafc; }
+  td code { background: #1e293b; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.85rem; color: #38bdf8; }
+  @media print {
+    body { background: #fff; color: #000; padding: 1rem; }
+    .diagram-section { background: #fff; border: 1px solid #ccc; }
+    .diagram-section h2 { color: #2563eb; }
+    .detail-note { background: #f8fafc; border-color: #2563eb; }
+    .legend { background: #f8fafc; }
+    .footer { color: #999; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>School Attendance Tracking &amp; Grading Management System</h1>
+  <p class="subtitle">Data Flow Diagram (DFD) &mdash; Level 0 Context &amp; Level 1 Subsystems</p>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-box external"></div> External Entity</div>
+    <div class="legend-item"><div class="legend-box process"></div> Process</div>
+    <div class="legend-item"><div class="legend-box store"></div> Data Store</div>
+    <div class="legend-item"><div class="legend-box file"></div> File / Export</div>
+    <div class="legend-line"><span class="line"></span><span class="label">Data Flow</span></div>
+    <div class="legend-line"><span class="line-dashed"></span><span class="label">Response / File</span></div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Context Diagram (Level 0)</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+---
+title: ATS Context Diagram (Level 0)
+---
+flowchart TD
+  subgraph External_Entities["External Entities"]
+    direction LR
+    HT["<b>Headteacher</b><br/><i>Full system admin</i>"]
+    CT["<b>Class Teacher</b><br/><i>Homeroom teacher</i>"]
+    ST["<b>Subject Teacher</b><br/><i>Subject specialist</i>"]
+    AT["<b>Academic Teacher</b><br/><i>Academic coordinator</i>"]
+  end
+
+  subgraph System["School Management System (ATS)"]
+    AUTH("<b>1.0</b><br/>Authentication<br/>&amp; Access Control")
+    ACADEMIC("<b>2.0</b><br/>Academic<br/>Management")
+    ATTEND("<b>3.0</b><br/>Attendance<br/>Tracking")
+    ASSESS("<b>4.0</b><br/>Assessment<br/>&amp; Grading")
+    REPORT("<b>5.0</b><br/>Reporting<br/>&amp; Analytics")
+    DASH("<b>6.0</b><br/>Dashboard")
+    ADMIN("<b>7.0</b><br/>System<br/>Administration")
+  end
+
+  subgraph Data_Stores["Data Stores (15 Collections)"]
+    DS_USERS[("<b>D1</b><br/>Users")]
+    DS_STUDENTS[("<b>D2</b><br/>Students")]
+    DS_TEACHERS[("<b>D3</b><br/>Teachers")]
+    DS_CLASSES[("<b>D4</b><br/>Classes/<br/>Streams")]
+    DS_SUBJECTS[("<b>D5</b><br/>Subjects")]
+    DS_ACADYEAR[("<b>D6</b><br/>Academic<br/>Years")]
+    DS_ATTEND[("<b>D7</b><br/>Attendance")]
+    DS_ASSESS[("<b>D8</b><br/>Assess-<br/>ments")]
+    DS_MARKS[("<b>D9</b><br/>Marks")]
+    DS_GRADES[("<b>D10</b><br/>Grade<br/>Scales")]
+    DS_REPORTS[("<b>D11</b><br/>Report<br/>Cards")]
+    DS_SETTINGS[("<b>D12</b><br/>School<br/>Settings")]
+    DS_NOTIF[("<b>D13</b><br/>Notifica-<br/>tions")]
+    DS_AUDIT[("<b>D14</b><br/>Audit<br/>Logs")]
+    DS_ASSIGN[("<b>D15</b><br/>Teacher<br/>Assign.")]
+  end
+
+  subgraph File_Stores["File Stores"]
+    FILE_PDF[/"<b>F1</b><br/>PDF Reports"/]
+    FILE_XLSX[/"<b>F2</b><br/>Excel Exports"/]
+    FILE_UPLOAD[/"<b>F3</b><br/>Uploads<br/>Photos/CSV/Backup"/]
+  end
+
+  HT <-->|"Login, Manage entities,<br/>Approve marks, Publish reports,<br/>Backup/restore, Settings"| AUTH
+  CT <-->|"Login, Mark attendance,<br/>Enter marks, Dashboard"| AUTH
+  ST <-->|"Login, Enter marks,<br/>View performance"| AUTH
+  AT <-->|"Login, Manage assessments,<br/>Marks oversight"| AUTH
+
+  AUTH <--> DS_USERS
+  ACADEMIC <--> DS_STUDENTS & DS_TEACHERS & DS_CLASSES
+  ACADEMIC <--> DS_SUBJECTS & DS_ACADYEAR & DS_ASSIGN
+  ATTEND <--> DS_ATTEND
+  ASSESS <--> DS_ASSESS & DS_MARKS & DS_GRADES & DS_REPORTS
+  REPORT <--> DS_STUDENTS & DS_MARKS & DS_ATTEND & DS_REPORTS
+  DASH <--> DS_ATTEND & DS_MARKS & DS_STUDENTS
+  ADMIN <--> DS_SETTINGS & DS_NOTIF & DS_AUDIT
+
+  REPORT --> FILE_PDF
+  REPORT --> FILE_XLSX
+  ACADEMIC --> FILE_UPLOAD
+  ADMIN --> FILE_UPLOAD
+  ASSESS --> FILE_XLSX & FILE_UPLOAD
+
+  style HT fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ST fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AT fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AUTH fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style ACADEMIC fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style ATTEND fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style ASSESS fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style REPORT fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style DASH fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style ADMIN fill:#2563eb,color:#fff,stroke:#1d4ed8,stroke-width:2px
+  style FILE_PDF fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style FILE_XLSX fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style FILE_UPLOAD fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style DS_USERS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_STUDENTS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_TEACHERS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_CLASSES fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_SUBJECTS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ACADYEAR fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ATTEND fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ASSESS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_MARKS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_GRADES fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_REPORTS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_SETTINGS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_NOTIF fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ASSIGN fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>External Entities:</strong> <code>Headteacher</code> (full access), <code>Class Teacher</code> (attendance + marks), <code>Subject Teacher</code> (marks for assigned subjects), <code>Academic Teacher</code> (assessments + oversight).<br>
+      <strong>Data Stores:</strong> 15 MongoDB collections. <strong>File Stores:</strong> PDF via PDFKit, XLSX via SheetJS, Uploads via Multer.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 1.0: Authentication &amp; Access Control</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT1["<b>Headteacher</b>"]
+  CT1["<b>Class Teacher</b>"]
+  ST1["<b>Subject Teacher</b>"]
+  AT1["<b>Academic Teacher</b>"]
+
+  subgraph Auth_Process["1.0 Authentication & Access Control"]
+    REG("1.1<br/>Register")
+    LOGIN("1.2<br/>Login")
+    PROFILE("1.3<br/>Profile Mgmt")
+    LOGOUT("1.4<br/>Logout")
+    RBAC("1.5<br/>Role-Based<br/>Access Control")
+  end
+
+  DS_USERS1[("<b>D1</b><br/>Users")]
+  DS_AUDIT1[("<b>D14</b><br/>Audit Logs")]
+
+  HT1 -->|"Email, password, school details"| REG
+  REG -->|"Hashed password, user record"| DS_USERS1
+  REG -->|"Audit: user_created"| DS_AUDIT1
+
+  HT1 -->|"Email + password"| LOGIN
+  CT1 -->|"Email + password"| LOGIN
+  ST1 -->|"Email + password"| LOGIN
+  AT1 -->|"Email + password"| LOGIN
+  LOGIN -->|"Verify bcrypt hash"| DS_USERS1
+  DS_USERS1 -->|"User doc + role"| LOGIN
+  LOGIN -->|"JWT + user + school"| HT1
+  LOGIN -->|"JWT + user + school"| CT1
+  LOGIN -->|"JWT + user + school"| ST1
+  LOGIN -->|"JWT + user + school"| AT1
+  LOGIN -->|"Audit: login"| DS_AUDIT1
+
+  HT1 -->|"Update password/profile"| PROFILE
+  CT1 -->|"Update password/profile"| PROFILE
+  ST1 -->|"Update password/profile"| PROFILE
+  AT1 -->|"Update password/profile"| PROFILE
+  PROFILE -->|"New password hash"| DS_USERS1
+  PROFILE -->|"Audit: password_changed"| DS_AUDIT1
+
+  HT1 -->|"Logout"| LOGOUT
+  CT1 -->|"Logout"| LOGOUT
+  ST1 -->|"Logout"| LOGOUT
+  AT1 -->|"Logout"| LOGOUT
+
+  RBAC -->|"Verify role from JWT"| DS_USERS1
+  RBAC -->|"Role-based filter"| HT1
+  RBAC -->|"Role-based filter"| CT1
+  RBAC -->|"Role-based filter"| ST1
+  RBAC -->|"Role-based filter"| AT1
+
+  style HT1 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT1 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ST1 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AT1 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style REG fill:#2563eb,color:#fff,stroke-width:2px
+  style LOGIN fill:#2563eb,color:#fff,stroke-width:2px
+  style PROFILE fill:#2563eb,color:#fff,stroke-width:2px
+  style LOGOUT fill:#2563eb,color:#fff,stroke-width:2px
+  style RBAC fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_USERS1 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT1 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+</pre>
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 2.0: Academic Management</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT2["<b>Headteacher</b>"]
+  CT2["<b>Class Teacher</b>"]
+
+  subgraph Academic_Process["2.0 Academic Management"]
+    STUDENT_CRUD("2.1<br/>Student CRUD")
+    TEACHER_CRUD("2.2<br/>Teacher CRUD")
+    CLASS_CRUD("2.3<br/>Class/Stream<br/>CRUD")
+    SUBJECT_CRUD("2.4<br/>Subject CRUD")
+    ACADYEAR_CRUD("2.5<br/>Academic Year<br/>CRUD")
+    ASSIGN("2.6<br/>Teacher<br/>Assignment")
+    BULK_IMPORT("2.7<br/>Bulk Import<br/>CSV/Excel")
+  end
+
+  DS_STU[("<b>D2</b><br/>Students")]
+  DS_TCH[("<b>D3</b><br/>Teachers")]
+  DS_CLS[("<b>D4</b><br/>Classes/<br/>Streams")]
+  DS_SUBJ[("<b>D5</b><br/>Subjects")]
+  DS_YR[("<b>D6</b><br/>Academic<br/>Years")]
+  DS_ASGN[("<b>D15</b><br/>Teacher<br/>Assign.")]
+  DS_AUDIT2[("<b>D14</b><br/>Audit Logs")]
+  FILE_UP2[/"<b>F3</b><br/>Uploads"/]
+
+  HT2 -->|"Create/Update/Delete (soft)<br/>Upload photo, Promote"| STUDENT_CRUD
+  STUDENT_CRUD -->|"Student doc"| DS_STU
+  DS_STU -->|"Student list (scoped)"| STUDENT_CRUD
+  STUDENT_CRUD -->|"Student data"| HT2
+  STUDENT_CRUD -->|"Audit"| DS_AUDIT2
+
+  HT2 -->|"Create/Update/Deactivate"| TEACHER_CRUD
+  TEACHER_CRUD -->|"Teacher + User doc"| DS_TCH
+  DS_TCH -->|"Teacher list"| TEACHER_CRUD
+  TEACHER_CRUD --> HT2
+
+  HT2 -->|"Create/Update/Delete<br/>Assign class teacher"| CLASS_CRUD
+  CLASS_CRUD -->|"Class + Stream docs"| DS_CLS
+  DS_CLS -->|"Classes with counts"| CLASS_CRUD
+  CLASS_CRUD --> HT2
+
+  HT2 -->|"CRUD subjects"| SUBJECT_CRUD
+  SUBJECT_CRUD -->|"Subject doc"| DS_SUBJ
+  DS_SUBJ -->|"Subjects by dept"| SUBJECT_CRUD
+
+  HT2 -->|"CRUD academic years<br/>Set current year/term"| ACADYEAR_CRUD
+  ACADYEAR_CRUD -->|"Year + Term docs"| DS_YR
+
+  HT2 -->|"Assign to class/subject/stream"| ASSIGN
+  CT2 -->|"View assignments"| ASSIGN
+  ASSIGN -->|"Assignment doc<br/>(unique)"| DS_ASGN
+  DS_ASGN -->|"Teacher's assignments"| ASSIGN
+  ASSIGN --> HT2
+  ASSIGN --> CT2
+
+  HT2 -->|"Upload CSV/Excel"| BULK_IMPORT
+  BULK_IMPORT -->|"Parse + validate"| FILE_UP2
+  BULK_IMPORT -->|"Bulk student docs"| DS_STU
+  BULK_IMPORT -->|"Import result"| HT2
+
+  style HT2 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT2 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style STUDENT_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style TEACHER_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style CLASS_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style SUBJECT_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style ACADYEAR_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style ASSIGN fill:#2563eb,color:#fff,stroke-width:2px
+  style BULK_IMPORT fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_STU fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_TCH fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_CLS fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_SUBJ fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_YR fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ASGN fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT2 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style FILE_UP2 fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+</pre>
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 3.0: Attendance Tracking</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT3["<b>Headteacher</b>"]
+  CT3["<b>Class Teacher</b>"]
+
+  subgraph Attend_Process["3.0 Attendance Tracking"]
+    MARK_SINGLE("3.1<br/>Mark Attendance<br/>(Single)")
+    MARK_BULK("3.2<br/>Mark Attendance<br/>(Bulk)")
+    UPDATE_ATTEND("3.3<br/>Update Attendance<br/>(24hr window)")
+    REPORT_ATTEND("3.4<br/>Attendance Report")
+    ANALYTICS("3.5<br/>Attendance<br/>Analytics")
+  end
+
+  DS_ATT[("<b>D7</b><br/>Attendance")]
+  DS_AUDIT3[("<b>D14</b><br/>Audit Logs")]
+
+  CT3 -->|"Student + date + status<br/>present/absent/excused/sick"| MARK_SINGLE
+  HT3 -->|"Student + date + status"| MARK_SINGLE
+  MARK_SINGLE -->|"Attendance doc"| DS_ATT
+  MARK_SINGLE -->|"Audit"| DS_AUDIT3
+
+  CT3 -->|"Multiple students + statuses"| MARK_BULK
+  HT3 -->|"Multiple students + statuses"| MARK_BULK
+  MARK_BULK -->|"Bulk attendance docs"| DS_ATT
+
+  CT3 -->|"Attendance ID + new status"| UPDATE_ATTEND
+  HT3 -->|"Attendance ID + new status"| UPDATE_ATTEND
+  UPDATE_ATTEND -->|"Updated attendance doc"| DS_ATT
+
+  CT3 -->|"Filter: class/date/student"| REPORT_ATTEND
+  HT3 -->|"Filter: class/date/student"| REPORT_ATTEND
+  REPORT_ATTEND -->|"Read aggregated"| DS_ATT
+  DS_ATT -->|"Per-student summary"| REPORT_ATTEND
+  REPORT_ATTEND -->|"Attendance summary"| CT3
+  REPORT_ATTEND -->|"Attendance summary"| HT3
+
+  HT3 -->|"Weekly/monthly trends"| ANALYTICS
+  ANALYTICS -->|"Read aggregated"| DS_ATT
+  ANALYTICS -->|"Trend chart data"| HT3
+
+  style HT3 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT3 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style MARK_SINGLE fill:#2563eb,color:#fff,stroke-width:2px
+  style MARK_BULK fill:#2563eb,color:#fff,stroke-width:2px
+  style UPDATE_ATTEND fill:#2563eb,color:#fff,stroke-width:2px
+  style REPORT_ATTEND fill:#2563eb,color:#fff,stroke-width:2px
+  style ANALYTICS fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_ATT fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT3 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Statuses:</strong> <code>present</code>, <code>absent</code>, <code>excused</code>, <code>sick</code>, <code>schoolActivity</code>.
+      <strong>Update window:</strong> 24 hours. <strong>Access:</strong> Class teachers via <code>authorizeAttendance</code> middleware.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 4.0: Assessment &amp; Grading</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT4["<b>Headteacher</b>"]
+  ST4["<b>Subject Teacher</b>"]
+  CT4["<b>Class Teacher</b>"]
+  AT4["<b>Academic Teacher</b>"]
+
+  subgraph Assess_Process["4.0 Assessment & Grading"]
+    ASSESS_CRUD("4.1<br/>Assessment CRUD<br/>&amp; Lifecycle")
+    MARKS_ENTER("4.2<br/>Enter Marks<br/>(Single/Bulk)")
+    MARKS_APPROVE("4.3<br/>Approve Marks")
+    GRADE_CALC("4.4<br/>Grade<br/>Calculation")
+    GRADESCALE("4.5<br/>Grade Scale<br/>Management")
+    REPORT_GEN("4.6<br/>Report Card<br/>Generation")
+    PUBLISH("4.7<br/>Publish/Print/<br/>Export")
+  end
+
+  DS_ASMNT[("<b>D8</b><br/>Assessments")]
+  DS_MRK[("<b>D9</b><br/>Marks")]
+  DS_GRD[("<b>D10</b><br/>Grade Scales")]
+  DS_RPT[("<b>D11</b><br/>Report Cards")]
+  DS_STU4[("<b>D2</b><br/>Students")]
+  DS_ATT4[("<b>D7</b><br/>Attendance")]
+  DS_AUDIT4[("<b>D14</b><br/>Audit Logs")]
+  FILE_PDF4[/"<b>F1</b><br/>PDF"/]
+  FILE_XLSX4[/"<b>F2</b><br/>Excel"/]
+
+  AT4 -->|"Create/Update/Delete<br/>Publish/Release/Close"| ASSESS_CRUD
+  ASSESS_CRUD -->|"Assessment doc"| DS_ASMNT
+  DS_ASMNT -->|"Assessments (scoped)"| ASSESS_CRUD
+  ASSESS_CRUD --> AT4
+  ASSESS_CRUD -->|"Audit"| DS_AUDIT4
+  ASSESS_CRUD -->|"Import/Export XLSX"| FILE_XLSX4
+  FILE_XLSX4 -->|"Template download"| ASSESS_CRUD
+
+  ST4 -->|"Student + assessment + score"| MARKS_ENTER
+  CT4 -->|"Student + assessment + score"| MARKS_ENTER
+  HT4 -->|"Student + assessment + score"| MARKS_ENTER
+  MARKS_ENTER -->|"Validate maxScore"| DS_ASMNT
+  MARKS_ENTER -->|"Mark doc<br/>(unique: student+assessment)"| DS_MRK
+  MARKS_ENTER -->|"Audit"| DS_AUDIT4
+  MARKS_ENTER -->|"Calculate grade"| GRADE_CALC
+  GRADE_CALC -->|"Read active scales"| DS_GRD
+  DS_GRD -->|"Grade + gradePoint"| GRADE_CALC
+  GRADE_CALC -->|"Grade assigned"| MARKS_ENTER
+
+  HT4 -->|"Approve mark IDs"| MARKS_APPROVE
+  MARKS_APPROVE -->|"isApproved=true"| DS_MRK
+  DS_MRK -->|"Mark status"| MARKS_APPROVE
+  MARKS_APPROVE --> HT4
+
+  HT4 -->|"CRUD grade scales"| GRADESCALE
+  GRADESCALE -->|"Scale doc (overlap check)"| DS_GRD
+  DS_GRD -->|"Scales by system"| GRADESCALE
+  GRADESCALE -->|"Recalculate all"| GRADE_CALC
+  GRADE_CALC -->|"Bulk grade update"| DS_MRK
+
+  HT4 -->|"Generate for student(s)<br/>Bulk for class"| REPORT_GEN
+  REPORT_GEN -->|"Read marks by term"| DS_MRK
+  REPORT_GEN -->|"Read attendance"| DS_ATT4
+  REPORT_GEN -->|"Calc position/avg"| GRADE_CALC
+  REPORT_GEN -->|"Read student info"| DS_STU4
+  REPORT_GEN -->|"Report card doc"| DS_RPT
+
+  HT4 -->|"Publish report cards"| PUBLISH
+  PUBLISH -->|"isPublished=true"| DS_RPT
+  PUBLISH -->|"Print PDF (PDFKit)"| FILE_PDF4
+  PUBLISH -->|"Export XLSX (SheetJS)"| FILE_XLSX4
+  FILE_PDF4 -->|"A4 with branding,<br/>subjects, QR"| PUBLISH
+  FILE_XLSX4 -->|"Student results"| PUBLISH
+
+  style HT4 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ST4 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT4 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AT4 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ASSESS_CRUD fill:#2563eb,color:#fff,stroke-width:2px
+  style MARKS_ENTER fill:#2563eb,color:#fff,stroke-width:2px
+  style MARKS_APPROVE fill:#2563eb,color:#fff,stroke-width:2px
+  style GRADE_CALC fill:#2563eb,color:#fff,stroke-width:2px
+  style GRADESCALE fill:#2563eb,color:#fff,stroke-width:2px
+  style REPORT_GEN fill:#2563eb,color:#fff,stroke-width:2px
+  style PUBLISH fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_ASMNT fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_MRK fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_GRD fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_RPT fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_STU4 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ATT4 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT4 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style FILE_PDF4 fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style FILE_XLSX4 fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Assessment lifecycle:</strong> <code>draft</code> &rarr; <code>released</code> &rarr; <code>published</code> &rarr; <code>closed</code>.
+      <strong>Grade systems:</strong> <code>percentage</code>, <code>cbc</code>, <code>gpa</code>, <code>letter</code> (configurable).
+      <strong>Report card:</strong> Aggregates marks, calculates GPA, class position, attendance %. QR code for verification.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 5.0: Reporting &amp; Analytics</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT5["<b>Headteacher</b>"]
+  CT5["<b>Class Teacher</b>"]
+  ST5["<b>Subject Teacher</b>"]
+  AT5["<b>Academic Teacher</b>"]
+
+  subgraph Report_Process["5.0 Reporting & Analytics"]
+    PERF("5.1<br/>Performance<br/>Report")
+    GRADE_ANALYSIS("5.2<br/>Grade Analysis<br/>&amp; Distribution")
+    RANKING("5.3<br/>Student<br/>Ranking")
+    SUBJ_PERF("5.4<br/>Subject<br/>Performance")
+    CLASS_PERF("5.5<br/>Class Performance<br/>(Comparison)")
+    EXPORT("5.6<br/>Export Reports<br/>XLSX")
+  end
+
+  DS_MRK5[("<b>D9</b><br/>Marks")]
+  DS_STU5[("<b>D2</b><br/>Students")]
+  DS_GRD5[("<b>D10</b><br/>Grade Scales")]
+  DS_CLS5[("<b>D4</b><br/>Classes")]
+  FILE_XLSX5[/"<b>F2</b><br/>Excel"/]
+
+  HT5 -->|"Filter: class/term/subject"| PERF
+  CT5 -->|"Filter: class/term/subject"| PERF
+  ST5 -->|"Filter: class/term/subject"| PERF
+  AT5 -->|"Filter: class/term/subject"| PERF
+  PERF -->|"Aggregate marks"| DS_MRK5
+  PERF -->|"Read students"| DS_STU5
+  PERF -->|"Performance + ranking"| HT5
+  PERF -->|"Performance + ranking"| CT5
+  PERF -->|"Performance + ranking"| ST5
+  PERF -->|"Performance + ranking"| AT5
+
+  HT5 -->|"Filter: assessment/class"| GRADE_ANALYSIS
+  AT5 -->|"Filter: assessment/class"| GRADE_ANALYSIS
+  GRADE_ANALYSIS -->|"Read marks"| DS_MRK5
+  GRADE_ANALYSIS -->|"Read grade scales"| DS_GRD5
+  GRADE_ANALYSIS -->|"Distribution stats"| HT5
+  GRADE_ANALYSIS -->|"Distribution stats"| AT5
+
+  HT5 -->|"Filter: class/term"| RANKING
+  CT5 -->|"Filter: class/term"| RANKING
+  RANKING -->|"Read + sort by avg"| DS_MRK5
+  RANKING -->|"Ranked student list"| HT5
+  RANKING -->|"Ranked student list"| CT5
+
+  HT5 -->|"Filter: subject"| SUBJ_PERF
+  ST5 -->|"Filter: subject"| SUBJ_PERF
+  AT5 -->|"Filter: subject"| SUBJ_PERF
+  SUBJ_PERF -->|"Read marks by subject"| DS_MRK5
+  SUBJ_PERF -->|"Current vs prev term"| HT5
+  SUBJ_PERF -->|"Per-subject breakdown"| ST5
+  SUBJ_PERF -->|"Per-subject breakdown"| AT5
+
+  HT5 -->|"Inter-class comparison"| CLASS_PERF
+  AT5 -->|"Inter-class comparison"| CLASS_PERF
+  CLASS_PERF -->|"Read marks by class"| DS_MRK5
+  CLASS_PERF -->|"Read classes"| DS_CLS5
+  CLASS_PERF -->|"Comparison chart"| HT5
+  CLASS_PERF -->|"Comparison chart"| AT5
+
+  HT5 -->|"Export + format"| EXPORT
+  CT5 -->|"Export + format"| EXPORT
+  ST5 -->|"Export + format"| EXPORT
+  AT5 -->|"Export + format"| EXPORT
+  EXPORT -->|"Read source data"| DS_MRK5
+  EXPORT -->|"Generate XLSX"| FILE_XLSX5
+  FILE_XLSX5 -->|"Downloadable file"| EXPORT
+  EXPORT -->|"Excel download"| HT5
+
+  style HT5 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT5 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ST5 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AT5 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style PERF fill:#2563eb,color:#fff,stroke-width:2px
+  style GRADE_ANALYSIS fill:#2563eb,color:#fff,stroke-width:2px
+  style RANKING fill:#2563eb,color:#fff,stroke-width:2px
+  style SUBJ_PERF fill:#2563eb,color:#fff,stroke-width:2px
+  style CLASS_PERF fill:#2563eb,color:#fff,stroke-width:2px
+  style EXPORT fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_MRK5 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_STU5 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_GRD5 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_CLS5 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style FILE_XLSX5 fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+</pre>
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Level 1 &mdash; Process 6.0: Dashboards &amp; Process 7.0: System Administration</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart TD
+  HT6["<b>Headteacher</b>"]
+  CT6["<b>Class Teacher</b>"]
+  ST6["<b>Subject Teacher</b>"]
+  AT6["<b>Academic Teacher</b>"]
+
+  subgraph Dashboard_Process["6.0 Dashboard (Role-based)"]
+    HT_DASH("6.1<br/>Headteacher<br/>Dashboard")
+    CT_DASH("6.2<br/>Class Teacher<br/>Dashboard")
+    ST_DASH("6.3<br/>Subject Teacher<br/>Dashboard")
+    AT_DASH("6.4<br/>Academic Teacher<br/>Dashboard")
+  end
+
+  subgraph Admin_Process["7.0 System Administration"]
+    SETTINGS("7.1<br/>School Settings")
+    LOGO("7.2<br/>Upload Logo")
+    BACKUP("7.3<br/>Backup/<br/>Restore DB")
+    AUDIT("7.4<br/>Audit Log<br/>Viewer")
+    NOTIF("7.5<br/>Notifications")
+  end
+
+  DS_STU6[("<b>D2</b><br/>Students")]
+  DS_CLS6[("<b>D4</b><br/>Classes")]
+  DS_ATT6[("<b>D7</b><br/>Attendance")]
+  DS_MRK6[("<b>D9</b><br/>Marks")]
+  DS_ASMNT6[("<b>D8</b><br/>Assessments")]
+  DS_SET[("<b>D12</b><br/>School<br/>Settings")]
+  DS_NOT[("<b>D13</b><br/>Notifica-<br/>tions")]
+  DS_AUDIT6[("<b>D14</b><br/>Audit Logs")]
+  FILE_UP6[/"<b>F3</b><br/>Uploads"/]
+  FILE_BACKUP[/"<b>F3</b><br/>Backup JSON"/]
+
+  HT6 -->|"View overview"| HT_DASH
+  HT_DASH -->|"Attendance by class"| DS_ATT6
+  HT_DASH -->|"Performance by class"| DS_MRK6
+  HT_DASH -->|"Gender + class dist."| DS_STU6
+  HT_DASH -->|"Recent assessments"| DS_ASMNT6
+  HT_DASH -->|"Dashboard data"| HT6
+
+  CT6 -->|"View my class"| CT_DASH
+  CT_DASH -->|"Today's attendance"| DS_ATT6
+  CT_DASH -->|"Class students"| DS_STU6
+  CT_DASH -->|"Weekly trend"| CT6
+
+  ST6 -->|"View subject perf."| ST_DASH
+  ST_DASH -->|"Marks by subject"| DS_MRK6
+  ST_DASH -->|"Pending assessments"| DS_ASMNT6
+  ST_DASH -->|"Performance chart"| ST6
+
+  AT6 -->|"View oversight"| AT_DASH
+  AT_DASH -->|"Assessment stats"| DS_ASMNT6
+  AT_DASH -->|"Marks by teacher"| DS_MRK6
+  AT_DASH -->|"Performance by class"| DS_MRK6
+  AT_DASH -->|"Oversight dashboard"| AT6
+
+  HT6 -->|"Update school info<br/>grading system, config"| SETTINGS
+  SETTINGS -->|"Settings doc (singleton)"| DS_SET
+  DS_SET -->|"Current settings"| SETTINGS
+  SETTINGS --> HT6
+
+  HT6 -->|"Upload logo"| LOGO
+  LOGO -->|"Save to uploads/"| FILE_UP6
+  LOGO -->|"Update settings.logo"| DS_SET
+
+  HT6 -->|"Backup request"| BACKUP
+  BACKUP -->|"Export all collections"| DS_SET
+  BACKUP -->|"Export"| DS_STU6
+  BACKUP -->|"Export"| DS_MRK6
+  BACKUP -->|"Export"| DS_ATT6
+  BACKUP -->|"Export"| DS_ASMNT6
+  BACKUP -->|"JSON dump"| FILE_BACKUP
+  FILE_BACKUP -->|"Download"| BACKUP
+  BACKUP -->|"Upload + restore"| FILE_UP6
+  BACKUP --> HT6
+
+  HT6 -->|"View audit trail"| AUDIT
+  AUDIT -->|"Read filtered logs"| DS_AUDIT6
+  DS_AUDIT6 -->|"By user/action/date"| AUDIT
+  AUDIT --> HT6
+
+  HT6 -->|"Send notification"| NOTIF
+  CT6 -->|"Send/receive"| NOTIF
+  ST6 -->|"Send/receive"| NOTIF
+  AT6 -->|"Send/receive"| NOTIF
+  NOTIF -->|"Doc (TTL: 90d)"| DS_NOT
+  DS_NOT -->|"User's notifications"| NOTIF
+  NOTIF -->|"Unread count + list"| HT6
+  NOTIF -->|"Unread count + list"| CT6
+  NOTIF -->|"Unread count + list"| ST6
+  NOTIF -->|"Unread count + list"| AT6
+  NOTIF -->|"Audit"| DS_AUDIT6
+
+  style HT6 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style CT6 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style ST6 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style AT6 fill:#7c3aed,color:#fff,stroke:#6d28d9,stroke-width:2px
+  style HT_DASH fill:#2563eb,color:#fff,stroke-width:2px
+  style CT_DASH fill:#2563eb,color:#fff,stroke-width:2px
+  style ST_DASH fill:#2563eb,color:#fff,stroke-width:2px
+  style AT_DASH fill:#2563eb,color:#fff,stroke-width:2px
+  style SETTINGS fill:#2563eb,color:#fff,stroke-width:2px
+  style LOGO fill:#2563eb,color:#fff,stroke-width:2px
+  style BACKUP fill:#2563eb,color:#fff,stroke-width:2px
+  style AUDIT fill:#2563eb,color:#fff,stroke-width:2px
+  style NOTIF fill:#2563eb,color:#fff,stroke-width:2px
+  style DS_STU6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_CLS6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ATT6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_MRK6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_ASMNT6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_SET fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_NOT fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style DS_AUDIT6 fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style FILE_UP6 fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style FILE_BACKUP fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Dashboard:</strong> Each role gets a purpose-built dashboard. <strong>Backup:</strong> Exports all 17 collections as JSON. <strong>Audit:</strong> All writes auto-logged. <strong>Notifications:</strong> TTL 90 days.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Data Store Inventory</h2>
+    <div style="overflow-x:auto;">
+    <table>
+      <tr><th>ID</th><th>Data Store</th><th>Collection</th><th>Key Attributes</th><th>Accessed By</th></tr>
+      <tr><td>D1</td><td>Users</td><td><code>users</code></td><td>email, password(hashed), role, isActive</td><td>1.0 Auth</td></tr>
+      <tr><td>D2</td><td>Students</td><td><code>students</code></td><td>admissionNumber, name, class, stream, guardianInfo, status</td><td>2.0, 4.0, 5.0, 6.0</td></tr>
+      <tr><td>D3</td><td>Teachers</td><td><code>teachers</code></td><td>employeeId, name, designation, qualifications, subjects[]</td><td>2.0 Academic Mgmt</td></tr>
+      <tr><td>D4</td><td>Classes/Streams</td><td><code>classes</code>, <code>streams</code></td><td>name, code, capacity, classTeacher, streams[], subjects[]</td><td>2.0, 3.0, 5.0, 6.0</td></tr>
+      <tr><td>D5</td><td>Subjects</td><td><code>subjects</code></td><td>name, code, department, category(core/elective), credits</td><td>2.0 Academic Mgmt</td></tr>
+      <tr><td>D6</td><td>Academic Years</td><td><code>academicyears</code></td><td>name, year, isCurrent, startDate, endDate, terms[]</td><td>2.0 Academic Mgmt</td></tr>
+      <tr><td>D7</td><td>Attendance</td><td><code>attendances</code></td><td>student, date, status, timeIn, timeOut, location</td><td>3.0, 4.0, 5.0, 6.0</td></tr>
+      <tr><td>D8</td><td>Assessments</td><td><code>assessments</code></td><td>name, type, weight, subject, class, maxScore, status</td><td>4.0, 6.0</td></tr>
+      <tr><td>D9</td><td>Marks</td><td><code>marks</code></td><td>student, assessment, score, grade, gradePoint, isApproved</td><td>4.0, 5.0, 6.0</td></tr>
+      <tr><td>D10</td><td>Grade Scales</td><td><code>gradescales</code></td><td>name, minScore, maxScore, gradePoint, system, isActive</td><td>4.0 Grading</td></tr>
+      <tr><td>D11</td><td>Report Cards</td><td><code>reportcards</code></td><td>student, term, subjects[], averageScore, position, isPublished</td><td>4.0 Reporting</td></tr>
+      <tr><td>D12</td><td>School Settings</td><td><code>schoolsettings</code></td><td>schoolName, gradingSystem, reportCardConfig, theme (singleton)</td><td>7.0 Admin</td></tr>
+      <tr><td>D13</td><td>Notifications</td><td><code>notifications</code></td><td>recipient, type, title, message, isRead (TTL: 90d)</td><td>7.0 Admin</td></tr>
+      <tr><td>D14</td><td>Audit Logs</td><td><code>auditlogs</code></td><td>user, action, resource, resourceId, details, ipAddress, timestamp</td><td>7.0 Admin</td></tr>
+      <tr><td>D15</td><td>Teacher Assignments</td><td><code>teacherassignments</code></td><td>teacher, class, subject, stream, isClassTeacher</td><td>2.0 Academic Mgmt</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Technology Stack &amp; Architecture</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+flowchart LR
+  subgraph Frontend["Frontend (React + TypeScript)"]
+    REACT["React 18 + Vite"]
+    TAILWIND["Tailwind CSS"]
+    AXIOS["Axios API Layer"]
+    CONTEXT["Auth Context<br/>(JWT in localStorage)"]
+  end
+
+  subgraph Backend["Backend (Node.js + Express)"]
+    ROUTES["Routes Layer<br/>(RESTful /api/*)"]
+    MIDDLEWARE["Middleware<br/>auth: protect, authorize<br/>audit: auditLogger"]
+    CONTROLLERS["Controllers<br/>(Business Logic)"]
+    MODELS["Mongoose Models<br/>(17 Collections)"]
+    UTILS["Utilities<br/>gradingEngine<br/>pdfGenerator<br/>excelExporter"]
+  end
+
+  subgraph Storage["Storage"]
+    MONGODB[("MongoDB<br/>Atlas / Local")]
+    UPLOADS[/"File Uploads<br/>(multer memory)"/]
+  end
+
+  subgraph Output["Output"]
+    PDF["PDFKit<br/>(A4 Report Cards)"]
+    XLSX["SheetJS<br/>(Excel Reports)"]
+    QR["QR Code<br/>(Verification)"]
+  end
+
+  REACT -->|"HTTP requests<br/>Authorization: Bearer"| AXIOS
+  AXIOS -->|"REST API calls"| ROUTES
+  ROUTES -->|"Middleware chain"| MIDDLEWARE
+  MIDDLEWARE -->|"Authorized request"| CONTROLLERS
+  CONTROLLERS -->|"CRUD operations"| MODELS
+  MODELS -->|"Mongoose ODM"| MONGODB
+  CONTROLLERS -->|"File handling"| UPLOADS
+  CONTROLLERS -->|"Generate"| PDF
+  CONTROLLERS -->|"Generate"| XLSX
+  CONTROLLERS -->|"Generate"| QR
+  CONTEXT -->|"Token mgmt"| AXIOS
+
+  style REACT fill:#0ea5e9,color:#fff,stroke-width:2px
+  style TAILWIND fill:#06b6d4,color:#fff,stroke-width:2px
+  style AXIOS fill:#6366f1,color:#fff,stroke-width:2px
+  style CONTEXT fill:#8b5cf6,color:#fff,stroke-width:2px
+  style ROUTES fill:#2563eb,color:#fff,stroke-width:2px
+  style MIDDLEWARE fill:#2563eb,color:#fff,stroke-width:2px
+  style CONTROLLERS fill:#2563eb,color:#fff,stroke-width:2px
+  style MODELS fill:#2563eb,color:#fff,stroke-width:2px
+  style UTILS fill:#2563eb,color:#fff,stroke-width:2px
+  style MONGODB fill:#059669,color:#fff,stroke:#047857,stroke-width:2px
+  style UPLOADS fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style PDF fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style XLSX fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+  style QR fill:#d97706,color:#fff,stroke:#b45309,stroke-width:2px
+</pre>
+    </div>
+  </div>
+
+  <div class="footer">
+    School Attendance Tracking &amp; Grading Management System (ATS) &mdash; Generated: 2026-07-23
+  </div>
+</div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      fontSize: '16px',
+      primaryColor: '#1e293b',
+      primaryBorderColor: '#334155',
+      primaryTextColor: '#e2e8f0',
+      lineColor: '#94a3b8',
+      secondaryColor: '#0f172a',
+      tertiaryColor: '#1e293b',
+      fontFamily: 'Segoe UI, system-ui, sans-serif',
+    },
+    flowchart: {
+      useMaxWidth: true,
+      htmlLabels: true,
+      curve: 'basis',
+      padding: 20,
+    },
+  });
+</script>
+</body>
+</html>

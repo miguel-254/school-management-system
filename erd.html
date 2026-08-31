@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATS - Entity Relationship Diagram</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #0f172a;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    padding: 1.5rem;
+  }
+  .container { max-width: 100%; margin: 0 auto; }
+  h1 { font-size: 2rem; margin-bottom: 0.25rem; color: #f8fafc; }
+  .subtitle { color: #94a3b8; margin-bottom: 1.5rem; font-size: 1rem; }
+  .diagram-section {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155;
+    overflow: visible;
+  }
+  .diagram-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .diagram-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: #38bdf8;
+    border-radius: 2px;
+  }
+  .legend {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    background: #0f172a;
+    border-radius: 8px;
+    border: 1px solid #334155;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    color: #94a3b8;
+  }
+  .legend-box { width: 18px; height: 18px; border-radius: 3px; }
+  .legend-box.entity { background: #7c3aed; }
+  .legend-box.relation { background: #2563eb; }
+  .legend-box.attr { background: #d97706; }
+  .legend-box.key { background: #059669; }
+  .mermaid-wrapper {
+    overflow-x: auto;
+    overflow-y: visible;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  .mermaid-wrapper svg {
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+  }
+  .footer { text-align: center; color: #475569; font-size: 0.85rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #1e293b; }
+  .detail-note {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-left: 3px solid #38bdf8;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    line-height: 1.6;
+  }
+  .detail-note strong { color: #e2e8f0; }
+  .detail-note code {
+    background: #1e293b;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    color: #38bdf8;
+  }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th { text-align: left; padding: 0.75rem 1rem; color: #94a3b8; border-bottom: 2px solid #334155; }
+  td { padding: 0.6rem 1rem; border-bottom: 1px solid #1e293b; }
+  td:first-child { color: #38bdf8; font-weight: 600; }
+  td code { background: #1e293b; padding: 0.1rem 0.35rem; border-radius: 3px; font-size: 0.85rem; color: #38bdf8; }
+  @media print {
+    body { background: #fff; color: #000; padding: 1rem; }
+    .diagram-section { background: #fff; border: 1px solid #ccc; }
+    .diagram-section h2 { color: #2563eb; }
+    .detail-note { background: #f8fafc; border-color: #2563eb; }
+    .legend { background: #f8fafc; }
+    .footer { color: #999; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>School Attendance Tracking &amp; Grading Management System</h1>
+  <p class="subtitle">Entity Relationship Diagram (ERD) &mdash; Crow's Foot Notation</p>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-box entity"></div> Entity</div>
+    <div class="legend-item"><div class="legend-box relation"></div> Relationship</div>
+    <div class="legend-item"><div class="legend-box attr"></div> Attribute</div>
+    <div class="legend-item"><div class="legend-box key"></div> Primary Key</div>
+    <div class="legend-item" style="color:#94a3b8;"><span style="font-weight:bold;color:#f59e0b;">||--o{</span> One-to-Many</div>
+    <div class="legend-item" style="color:#94a3b8;"><span style="font-weight:bold;color:#f59e0b;">||--||</span> One-to-One</div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Core Academic Entities</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+erDiagram
+  User {
+    string _id PK
+    string email UK
+    string password
+    string role
+    string firstName
+    string lastName
+    string phone
+    bool isActive
+    date lastLogin
+    date passwordChangedAt
+    string schoolId FK
+  }
+
+  Teacher {
+    string _id PK
+    string employeeId UK
+    string firstName
+    string lastName
+    string gender
+    date dateOfBirth
+    string qualifications
+    string subjects
+    string classAssigned FK
+    string designation
+    string emergencyContact
+    string address
+    string documents
+    string userId FK
+  }
+
+  TeacherAssignment {
+    string _id PK
+    string teacherId FK
+    string classId FK
+    string subjectId FK
+    string streamId FK
+    string academicYearId FK
+    string termId FK
+    string teacherRole
+    bool isClassTeacher
+    string assignedBy FK
+  }
+
+  Student {
+    string _id PK
+    string admissionNumber UK
+    string firstName
+    string lastName
+    string gender
+    date dateOfBirth
+    string classId FK
+    string streamId FK
+    string guardianInfo
+    string address
+    string emergencyContact
+    string medicalInfo
+    string passportPhoto
+    date enrollmentDate
+    string status
+    string academicHistory
+    string previousSchool
+    string schoolFees
+    string userId FK
+  }
+
+  Class {
+    string _id PK
+    string name
+    string code UK
+    string description
+    string department
+    string academicYearId FK
+    string classTeacherId FK
+    int capacity
+    string streams
+    string subjects
+  }
+
+  Stream {
+    string _id PK
+    string name
+    string code
+    string classId FK
+    string description
+  }
+
+  Subject {
+    string _id PK
+    string name
+    string code UK
+    string description
+    string department
+    string category
+    int credits
+  }
+
+  AcademicYear {
+    string _id PK
+    string name
+    string year
+    date startDate
+    date endDate
+    bool isCurrent
+    string terms
+  }
+
+  Term {
+    string _id PK
+    string name
+    string academicYearId FK
+    date startDate
+    date endDate
+    bool isCurrent
+    string examCategories
+  }
+
+  User ||--o{ Teacher : has
+  User ||--o{ Student : has
+  Teacher ||--o{ TeacherAssignment : receives
+  Class ||--o{ TeacherAssignment : for
+  Subject ||--o{ TeacherAssignment : for
+  Stream ||--o{ TeacherAssignment : for
+  AcademicYear ||--o{ TeacherAssignment : in
+  Term ||--o{ TeacherAssignment : in
+  Class ||--o{ Student : enrolls
+  Stream ||--o{ Student : assigned
+  Class ||--o{ Stream : has
+  AcademicYear ||--o{ Class : has
+  Class ||--o{ Subject : offers
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Key:</strong> <code>User</code> is auth entity. <code>TeacherAssignment</code> has unique constraint on (teacher, class, subject).
+      <code>Student.admissionNumber</code> auto-generated as STU/YYYY/XXXX.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Attendance Entity</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+erDiagram
+  Attendance {
+    string _id PK
+    string studentId FK
+    string teacherId FK
+    string classId FK
+    string subjectId FK
+    date date
+    string timeIn
+    string timeOut
+    string status
+    string remarks
+    string deviceUsed
+    string location
+    string academicYearId FK
+    string termId FK
+    string markedBy FK
+    date createdAt
+  }
+
+  Student ||--o{ Attendance : has
+  Teacher ||--o{ Attendance : recorded
+  Class ||--o{ Attendance : for
+  Subject ||--o{ Attendance : for
+  AcademicYear ||--o{ Attendance : in
+  Term ||--o{ Attendance : in
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Status:</strong> present, absent, excused, sick, schoolActivity.
+      location supports geospatial data.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Assessment &amp; Grading Entities</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+erDiagram
+  Assessment {
+    string _id PK
+    string name
+    string code UK
+    string type
+    float weight
+    string academicYearId FK
+    string termId FK
+    string subjectId FK
+    string classId FK
+    string streamId FK
+    float maxScore
+    date examDate
+    int duration
+    string instructions
+    string createdBy FK
+    string status
+    date releaseDate
+    bool isRequired
+  }
+
+  Mark {
+    string _id PK
+    string studentId FK
+    string assessmentId FK
+    string subjectId FK
+    string classId FK
+    string streamId FK
+    string academicYearId FK
+    string termId FK
+    float score
+    float totalScore
+    string grade
+    float gradePoint
+    string remarks
+    string gradedBy FK
+    bool isApproved
+    string approvedBy FK
+    date approvedAt
+    bool isMissing
+    date submittedAt
+  }
+
+  GradeScale {
+    string _id PK
+    string name
+    string code UK
+    float minScore
+    float maxScore
+    float gradePoint
+    string description
+    string remark
+    string system
+    bool isActive
+  }
+
+  ReportCard {
+    string _id PK
+    string studentId FK
+    string academicYearId FK
+    string termId FK
+    string classId FK
+    string streamId FK
+    string subjects
+    float totalScore
+    float averageScore
+    string grade
+    float gradePoint
+    int position
+    int classSize
+    string attendanceSummary
+    string teacherRemarks
+    string headteacherRemarks
+    string generatedBy FK
+    date generatedAt
+    bool isPublished
+    string qrCode
+    int templateVersion
+  }
+
+  Subject ||--o{ Assessment : tested
+  Class ||--o{ Assessment : administered
+  AcademicYear ||--o{ Assessment : in
+  Term ||--o{ Assessment : in
+  User ||--o{ Assessment : created
+
+  Student ||--o{ Mark : receives
+  Assessment ||--o{ Mark : has
+  Subject ||--o{ Mark : for
+  Class ||--o{ Mark : for
+  AcademicYear ||--o{ Mark : in
+  Term ||--o{ Mark : in
+
+  Student ||--o{ ReportCard : has
+  AcademicYear ||--o{ ReportCard : for
+  Term ||--o{ ReportCard : for
+  Class ||--o{ ReportCard : for
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>Unique:</strong> Mark(student+assessment). <strong>Unique:</strong> ReportCard(student+academicYear+term).
+      <strong>Lifecycle:</strong> draft &rarr; released &rarr; published &rarr; closed.
+      <strong>Grade systems:</strong> percentage, cbc, gpa, letter.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>System &amp; Administration Entities</h2>
+    <div class="mermaid-wrapper">
+<pre class="mermaid">
+erDiagram
+  SchoolSetting {
+    string _id PK
+    string schoolName
+    string schoolCode
+    string address
+    string phone
+    string email
+    string website
+    string logo
+    string motto
+    string principalName
+    string gradingSystem
+    string academicYearConfig
+    string reportCardConfig
+    int sessionTimeout
+    string theme
+    string timezone
+    string locale
+  }
+
+  Notification {
+    string _id PK
+    string recipientId FK
+    string type
+    string title
+    string message
+    bool isRead
+    string link
+    string sentBy FK
+    date createdAt
+  }
+
+  AuditLog {
+    string _id PK
+    string userId FK
+    string action
+    string resource
+    string resourceId
+    string details
+    string ipAddress
+    string userAgent
+    date timestamp
+  }
+
+  User ||--o{ Notification : receives
+  User ||--o{ Notification : sends
+  User ||--o{ AuditLog : performs
+</pre>
+    </div>
+    <div class="detail-note">
+      <strong>SchoolSetting</strong> is a singleton. <strong>Notification</strong> has TTL index (90 days).
+      <strong>AuditLog</strong> captures all write operations automatically.
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Complete Relationship Summary</h2>
+    <div style="overflow-x:auto;">
+    <table>
+      <tr><th>Entity</th><th>Relationship</th><th>Related Entity</th><th>Cardinality</th><th>Description</th></tr>
+      <tr><td>User</td><td>has</td><td>Teacher</td><td>1 to 0..1</td><td>User optionally maps to a Teacher profile</td></tr>
+      <tr><td>User</td><td>has</td><td>Student</td><td>1 to 0..1</td><td>User optionally maps to a Student portal</td></tr>
+      <tr><td>User</td><td>sends</td><td>Notification</td><td>1 to many</td><td>User sends notifications</td></tr>
+      <tr><td>User</td><td>receives</td><td>Notification</td><td>1 to many</td><td>User receives notifications</td></tr>
+      <tr><td>User</td><td>performs</td><td>AuditLog</td><td>1 to many</td><td>User actions logged</td></tr>
+      <tr><td>Teacher</td><td>receives</td><td>TeacherAssignment</td><td>1 to many</td><td>Teacher assigned to classes/subjects</td></tr>
+      <tr><td>Teacher</td><td>records</td><td>Attendance</td><td>1 to many</td><td>Teacher marks attendance</td></tr>
+      <tr><td>Class</td><td>has</td><td>Stream</td><td>1 to many</td><td>Class contains streams</td></tr>
+      <tr><td>Class</td><td>enrolls</td><td>Student</td><td>1 to many</td><td>Students belong to a class</td></tr>
+      <tr><td>Class</td><td>offers</td><td>Subject</td><td>many to many</td><td>Class offers subjects (embedded ref)</td></tr>
+      <tr><td>Class</td><td>for</td><td>TeacherAssignment</td><td>1 to many</td><td>Assignments per class</td></tr>
+      <tr><td>Class</td><td>for</td><td>Attendance</td><td>1 to many</td><td>Attendance per class</td></tr>
+      <tr><td>Class</td><td>for</td><td>Assessment</td><td>1 to many</td><td>Assessments per class</td></tr>
+      <tr><td>Class</td><td>for</td><td>Mark</td><td>1 to many</td><td>Marks per class</td></tr>
+      <tr><td>Subject</td><td>for</td><td>TeacherAssignment</td><td>1 to many</td><td>Subject assigned to teachers</td></tr>
+      <tr><td>Subject</td><td>tested by</td><td>Assessment</td><td>1 to many</td><td>Subject has assessments</td></tr>
+      <tr><td>Subject</td><td>for</td><td>Mark</td><td>1 to many</td><td>Marks per subject</td></tr>
+      <tr><td>Subject</td><td>for</td><td>Attendance</td><td>1 to many</td><td>Attendance per subject</td></tr>
+      <tr><td>Stream</td><td>assigned to</td><td>Student</td><td>1 to many</td><td>Students in streams</td></tr>
+      <tr><td>Stream</td><td>for</td><td>TeacherAssignment</td><td>1 to many</td><td>Stream-specific assignments</td></tr>
+      <tr><td>AcademicYear</td><td>has</td><td>Term</td><td>1 to many</td><td>Year contains terms</td></tr>
+      <tr><td>AcademicYear</td><td>has</td><td>Class</td><td>1 to many</td><td>Classes per year</td></tr>
+      <tr><td>AcademicYear</td><td>in</td><td>Assessment</td><td>1 to many</td><td>Assessments per year</td></tr>
+      <tr><td>AcademicYear</td><td>in</td><td>Mark</td><td>1 to many</td><td>Marks per year</td></tr>
+      <tr><td>AcademicYear</td><td>in</td><td>Attendance</td><td>1 to many</td><td>Attendance per year</td></tr>
+      <tr><td>AcademicYear</td><td>in</td><td>TeacherAssignment</td><td>1 to many</td><td>Assignments per year</td></tr>
+      <tr><td>Term</td><td>in</td><td>Assessment</td><td>1 to many</td><td>Assessments per term</td></tr>
+      <tr><td>Term</td><td>in</td><td>Mark</td><td>1 to many</td><td>Marks per term</td></tr>
+      <tr><td>Term</td><td>in</td><td>Attendance</td><td>1 to many</td><td>Attendance per term</td></tr>
+      <tr><td>Term</td><td>for</td><td>ReportCard</td><td>1 to many</td><td>Report cards per term</td></tr>
+      <tr><td>Student</td><td>receives</td><td>Mark</td><td>1 to many</td><td>Student has marks</td></tr>
+      <tr><td>Student</td><td>has</td><td>Attendance</td><td>1 to many</td><td>Student attendance records</td></tr>
+      <tr><td>Student</td><td>has</td><td>ReportCard</td><td>1 to many</td><td>Report cards per term</td></tr>
+      <tr><td>Assessment</td><td>has</td><td>Mark</td><td>1 to many</td><td>Assessment has marks</td></tr>
+    </table>
+    </div>
+    <div class="detail-note" style="margin-top:1rem;">
+      <strong>17 entities.</strong> All relationships use document references (Mongoose populate).
+      Compound unique indexes: TeacherAssignment(teacher+class+subject), Mark(student+assessment), ReportCard(student+academicYear+term).
+    </div>
+  </div>
+
+  <div class="diagram-section">
+    <h2>Indexes &amp; Constraints</h2>
+    <div style="overflow-x:auto;">
+    <table>
+      <tr><th>Entity</th><th>Field(s)</th><th>Type</th><th>Purpose</th></tr>
+      <tr><td>User</td><td>email</td><td>Unique</td><td>Login uniqueness</td></tr>
+      <tr><td>Teacher</td><td>employeeId</td><td>Unique</td><td>Staff ID uniqueness</td></tr>
+      <tr><td>Student</td><td>admissionNumber</td><td>Unique</td><td>Auto-generated STU/YYYY/XXXX</td></tr>
+      <tr><td>Class</td><td>code</td><td>Unique</td><td>Class code uniqueness</td></tr>
+      <tr><td>Subject</td><td>code</td><td>Unique</td><td>Subject code uniqueness</td></tr>
+      <tr><td>Assessment</td><td>code</td><td>Unique</td><td>Assessment code uniqueness</td></tr>
+      <tr><td>GradeScale</td><td>code</td><td>Unique</td><td>Grade scale code uniqueness</td></tr>
+      <tr><td>TeacherAssignment</td><td>(teacher, class, subject)</td><td>Compound Unique</td><td>One assignment per teacher-class-subject</td></tr>
+      <tr><td>Mark</td><td>(student, assessment)</td><td>Compound Unique</td><td>One mark per student per assessment</td></tr>
+      <tr><td>ReportCard</td><td>(student, academicYear, term)</td><td>Compound Unique</td><td>One report card per student per term</td></tr>
+      <tr><td>Notification</td><td>createdAt</td><td>TTL (90d)</td><td>Auto-expire old notifications</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    School Attendance Tracking &amp; Grading Management System (ATS) &mdash; ERD Generated: 2026-07-23
+  </div>
+</div>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      fontSize: '15px',
+      primaryColor: '#1e293b',
+      primaryBorderColor: '#334155',
+      primaryTextColor: '#e2e8f0',
+      lineColor: '#94a3b8',
+      secondaryColor: '#0f172a',
+      tertiaryColor: '#1e293b',
+      fontFamily: 'Segoe UI, system-ui, sans-serif',
+    },
+    er: {
+      useMaxWidth: true,
+      layoutDirection: 'TB',
+      minEntityWidth: 140,
+      minEntityHeight: 50,
+      entityPadding: 18,
+    },
+  });
+</script>
+</body>
+</html>
