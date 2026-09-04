@@ -7,9 +7,18 @@ const path = require('path');
 const rateLimit = require('express-rate-limit');
 const connectDB = require('./config/db');
 
-dotenv.config({ path: path.join(__dirname, '../.env') });
+// ==========================================
+// ENVIRONMENT VARIABLES
+// ==========================================
 
-// Routes
+dotenv.config({
+  path: path.join(__dirname, '../.env')
+});
+
+// ==========================================
+// ROUTES
+// ==========================================
+
 const authRoutes = require('./routes/auth');
 const teacherRoutes = require('./routes/teachers');
 const studentRoutes = require('./routes/students');
@@ -33,76 +42,166 @@ const curriculumRoutes = require('./routes/curriculum');
 const libraryRoutes = require('./routes/library');
 const examDocumentRoutes = require('./routes/examDocuments');
 
+// ==========================================
+// EXPRESS APP
+// ==========================================
+
 const app = express();
 
-// Connect to MongoDB
+// ==========================================
+// DATABASE CONNECTION
+// ==========================================
+
 connectDB();
 
 // ==========================================
-// SECURITY & MIDDLEWARE
+// SECURITY
 // ==========================================
 
 app.use(helmet());
 
-// Allowed frontend origins
+// ==========================================
+// CORS CONFIGURATION
+// ==========================================
+
+/*
+  These are permanent frontend URLs.
+
+  Local development URLs are included for testing
+  the application locally.
+*/
+
 const allowedOrigins = [
   // Local development
   'http://localhost:5173',
   'http://localhost:3000',
 
-  // Production Vercel URLs
-  'https://school-management-system-vjzy.vercel.app',
-  'https://school-management-system-vjzy-sdi8jkr3z-ims-8070.vercel.app'
+  // Main Vercel production domain
+  'https://school-management-system-vjzy.vercel.app'
 ];
 
-// CORS configuration
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      // Allow requests with no Origin header
-      // Useful for Postman, server-to-server requests, etc.
-      if (!origin) {
-        return callback(null, true);
-      }
+/*
+  CORS validation.
 
-      // Allow approved origins
-      if (allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
+  The regex allows Vercel deployments generated
+  specifically for this school-management project.
 
-      // Block unknown origins
-      return callback(
-        new Error(`CORS blocked origin: ${origin}`)
+  Examples:
+
+  https://school-management-system-vjzy-xxxx.vercel.app
+*/
+
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests without Origin
+    // Examples:
+    // - Postman
+    // - Server-to-server requests
+    // - Health checks
+    if (!origin) {
+      return callback(null, true);
+    }
+
+    // Check explicitly allowed origins
+    const isExplicitlyAllowed =
+      allowedOrigins.includes(origin);
+
+    /*
+      Allow Vercel preview/production deployment URLs
+      for this specific project.
+
+      Examples allowed:
+
+      school-management-system-vjzy-xxxx.vercel.app
+    */
+
+    const isVercelDeployment =
+      /^https:\/\/school-management-system-vjzy-[a-z0-9-]+\.vercel\.app$/i.test(
+        origin
       );
-    },
 
-    // Allow cookies/authentication credentials
-    credentials: true,
+    // Allow valid origins
+    if (isExplicitlyAllowed || isVercelDeployment) {
+      return callback(null, true);
+    }
 
-    // Allowed HTTP methods
-    methods: [
-      'GET',
-      'POST',
-      'PUT',
-      'PATCH',
-      'DELETE',
-      'OPTIONS'
-    ],
+    // Log blocked origin
+    console.log(`CORS blocked origin: ${origin}`);
 
-    // Allowed request headers
-    allowedHeaders: [
-      'Content-Type',
-      'Authorization'
-    ]
+    return callback(
+      new Error(`CORS blocked origin: ${origin}`)
+    );
+  },
+
+  // Allow authentication credentials
+  credentials: true,
+
+  // Allowed HTTP methods
+  methods: [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS'
+  ],
+
+  // Allowed request headers
+  allowedHeaders: [
+    'Content-Type',
+    'Authorization'
+  ],
+
+  // Response status for OPTIONS requests
+  optionsSuccessStatus: 204
+};
+
+// Apply CORS globally
+app.use(cors(corsOptions));
+
+// Explicitly handle preflight OPTIONS requests
+app.options('*', cors(corsOptions));
+
+// ==========================================
+// BODY PARSING
+// ==========================================
+
+app.use(
+  express.json({
+    limit: '50mb'
   })
 );
 
-// Explicitly handle CORS preflight requests
-app.options('*', cors());
+app.use(
+  express.urlencoded({
+    extended: true,
+    limit: '50mb'
+  })
+);
 
-app.use(express.json({ limit: '50mb' }));
+// ==========================================
+// REQUEST LOGGING
+// ==========================================
 
 app.use(morgan('dev'));
+
+// ==========================================
+// HEALTH CHECK ROUTES
+// ==========================================
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    message: 'School Management API is running'
+  });
+});
+
+app.get('/api/health', (req, res) => {
+  res.status(200).json({
+    status: 'OK',
+    message: 'School Management API is healthy'
+  });
+});
 
 // ==========================================
 // RATE LIMITING
@@ -111,14 +210,20 @@ app.use(morgan('dev'));
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
 
-  // Maximum 2000 requests per 15 minutes
+  // Maximum requests per IP
   max: 2000,
 
+  standardHeaders: true,
+
+  legacyHeaders: false,
+
   message: {
-    error: 'Too many requests, please try again later.'
+    error:
+      'Too many requests, please try again later.'
   }
 });
 
+// Apply rate limiting to API routes
 app.use('/api', limiter);
 
 // ==========================================
@@ -127,70 +232,103 @@ app.use('/api', limiter);
 
 app.use(
   '/uploads',
-  express.static(path.join(__dirname, '../uploads'))
+  express.static(
+    path.join(__dirname, '../uploads')
+  )
 );
 
 // ==========================================
 // API ROUTES
 // ==========================================
 
+// Authentication
 app.use('/api/auth', authRoutes);
 
+// Teachers
 app.use('/api/teachers', teacherRoutes);
 
+// Students
 app.use('/api/students', studentRoutes);
 
+// Classes
 app.use('/api/classes', classRoutes);
 
+// Subjects
 app.use('/api/subjects', subjectRoutes);
 
+// Attendance
 app.use('/api/attendance', attendanceRoutes);
 
+// Assessments
 app.use('/api/assessments', assessmentRoutes);
 
+// Marks
 app.use('/api/marks', markRoutes);
 
+// Grades
 app.use('/api/grades', gradeRoutes);
 
+// Grade Scales
 app.use('/api/grade-scales', gradeScaleRoutes);
 
+// Terms
 app.use('/api/terms', termRoutes);
 
+// Streams
 app.use('/api/streams', streamRoutes);
 
+// Report Cards
 app.use('/api/report-cards', reportCardRoutes);
 
+// Dashboard
 app.use('/api/dashboard', dashboardRoutes);
 
+// Notifications
 app.use('/api/notifications', notificationRoutes);
 
+// Settings
 app.use('/api/settings', settingsRoutes);
 
+// Reports
 app.use('/api/reports', reportRoutes);
 
-app.use('/api/academic-years', academicYearRoutes);
+// Academic Years
+app.use(
+  '/api/academic-years',
+  academicYearRoutes
+);
 
+// Assignments
 app.use('/api/assignments', assignmentRoutes);
 
+// Curriculum
 app.use('/api/curriculum', curriculumRoutes);
 
+// Library
 app.use('/api/library', libraryRoutes);
 
-app.use('/api/exam-documents', examDocumentRoutes);
+// Exam Documents
+app.use(
+  '/api/exam-documents',
+  examDocumentRoutes
+);
 
 // ==========================================
 // BACKGROUND JOBS
 // ==========================================
 
-const { startOverdueJob } = require('./services/libraryOverdueJob');
+const {
+  startOverdueJob
+} = require('./services/libraryOverdueJob');
 
+// Start library overdue checking job
 startOverdueJob();
 
 // ==========================================
 // 404 HANDLER
 // ==========================================
 
-app.use((req, res, next) => {
+app.use((req, res) => {
   res.status(404).json({
     error: 'Route not found'
   });
@@ -201,35 +339,62 @@ app.use((req, res, next) => {
 // ==========================================
 
 app.use((err, req, res, next) => {
+  // Log error
+  console.error(err);
+
+  // ========================================
+  // MULTER FILE UPLOAD ERRORS
+  // ========================================
+
   const isMulterError =
-    err && err.name === 'MulterError';
+    err &&
+    err.name === 'MulterError';
+
+  // ========================================
+  // CUSTOM FILE FILTER ERRORS
+  // ========================================
 
   const isFileFilterError =
     err &&
     typeof err.message === 'string' &&
-    /^Only (image|CSV|Excel|Word|PDF)/.test(err.message);
+    /^Only (image|CSV|Excel|Word|PDF)/.test(
+      err.message
+    );
 
-  // File upload errors
   if (isMulterError || isFileFilterError) {
     return res.status(400).json({
-      error: err.message || 'Invalid file upload'
+      error:
+        err.message ||
+        'Invalid file upload'
     });
   }
 
-  // CORS errors
-  if (err && err.message && err.message.startsWith('CORS blocked origin:')) {
-    console.error(err.message);
+  // ========================================
+  // CORS ERRORS
+  // ========================================
 
+  if (
+    err &&
+    err.message &&
+    err.message.startsWith(
+      'CORS blocked origin:'
+    )
+  ) {
     return res.status(403).json({
       error: 'CORS policy blocked this request.'
     });
   }
 
-  // General errors
-  console.error(err.stack);
+  // ========================================
+  // GENERAL ERRORS
+  // ========================================
 
-  res.status(err.statusCode || 500).json({
-    error: err.message || 'Internal Server Error'
+  return res.status(
+    err.statusCode || 500
+  ).json({
+    error:
+      err.message ||
+      'Internal Server Error'
   });
 });
 
@@ -237,11 +402,17 @@ app.use((err, req, res, next) => {
 // START SERVER
 // ==========================================
 
-const PORT = process.env.PORT || 5000;
+const PORT =
+  process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(
+    `Server running on port ${PORT}`
+  );
 });
 
-// Export app
+// ==========================================
+// EXPORT APP
+// ==========================================
+
 module.exports = app;
