@@ -833,11 +833,11 @@ function AuditLogsTab({ onLoading, onError }: { onLoading: (v: boolean) => void;
       if (filters.action) params.action = filters.action;
       if (filters.startDate) params.startDate = filters.startDate;
       if (filters.endDate) params.endDate = filters.endDate;
-      const { data } = await api.get<ApiResponse<AuditLog[]>>('/settings/audit-logs', { params });
-      setLogs(data.data || []);
-      if (data.pagination) {
-        setTotalPages(data.pagination.pages);
-        setTotal(data.pagination.total);
+      const { data } = await api.get<ApiResponse<{ logs: AuditLog[]; pagination: NonNullable<ApiResponse['pagination']> }>>('/settings/audit-logs', { params });
+      setLogs(data.data?.logs || []);
+      if (data.data?.pagination) {
+        setTotalPages(data.data.pagination.pages);
+        setTotal(data.data.pagination.total);
       }
     } catch (err: any) {
       const msg = err.response?.data?.message || err.message || 'Failed to load audit logs';

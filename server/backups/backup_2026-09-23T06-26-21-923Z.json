@@ -1,0 +1,5842 @@
+{
+  "schoolSettings": {
+    "_id": "6a4f66cf182406e9756d9d0c",
+    "schoolName": "Achievers Trophy School",
+    "schoolCode": "ATS001",
+    "phone": "+254712345678",
+    "email": "info@achieverstrophy.sch.ke",
+    "website": "https://achieverstrophy.sch.ke",
+    "logo": "",
+    "motto": "Excellence Through Dedication",
+    "principalName": "Dr. John Kimani",
+    "gradingSystem": "cbc",
+    "academicYearConfig": {
+      "terms": 3,
+      "semesters": 2
+    },
+    "reportCardConfig": {
+      "showLogo": true,
+      "showPhoto": true,
+      "showQR": true,
+      "showSignature": true,
+      "showStamp": true,
+      "showGraph": true
+    },
+    "sessionTimeout": 30,
+    "theme": "light",
+    "timezone": "Africa/Nairobi",
+    "locale": "en",
+    "createdAt": "2026-07-09T09:15:59.806Z",
+    "updatedAt": "2026-08-19T10:32:35.458Z",
+    "__v": 0,
+    "address": ""
+  },
+  "users": [
+    {
+      "_id": "6a4f66d0182406e9756d9d10",
+      "email": "johnkimani@gmail.com",
+      "password": "$2a$12$g320ulQzlOtt.90wR/zNW.Q.KmIESdPTxMOZRDnZjJlXFMxNdJacS",
+      "role": "headteacher",
+      "firstName": "John",
+      "lastName": "Kimani",
+      "phone": "+254712345670",
+      "isActive": true,
+      "schoolId": "6a4f66cf182406e9756d9d0c",
+      "createdAt": "2026-07-09T09:16:00.127Z",
+      "updatedAt": "2026-09-23T06:25:48.480Z",
+      "__v": 0,
+      "lastLogin": "2026-09-23T06:25:48.478Z"
+    },
+    {
+      "_id": "6a4f66d0182406e9756d9d17",
+      "email": "jane@school.com",
+      "password": "$2a$12$bNn.k2ZIMvHBFBebAa7CgeVl.vMokxgNXjLZdudayV.hioth9zKbi",
+      "role": "class_teacher",
+      "firstName": "Jane",
+      "lastName": "Wanjiku",
+      "phone": "+254723456789",
+      "isActive": true,
+      "schoolId": "6a4f66cf182406e9756d9d0c",
+      "createdAt": "2026-07-09T09:16:00.879Z",
+      "updatedAt": "2026-08-19T08:22:36.747Z",
+      "__v": 0,
+      "lastLogin": "2026-08-19T08:22:36.740Z"
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d1a",
+      "email": "ochieng@school.com",
+      "password": "$2a$12$tZ2Bowxq6BQTpVd.9Md0nuvUO1FfdS63a3x01ql5eTqODSW3tnEly",
+      "role": "class_teacher",
+      "firstName": "Peter",
+      "lastName": "Ochieng",
+      "phone": "+254734567890",
+      "isActive": true,
+      "schoolId": "6a4f66cf182406e9756d9d0c",
+      "createdAt": "2026-07-09T09:16:01.291Z",
+      "updatedAt": "2026-08-19T07:09:03.788Z",
+      "__v": 0,
+      "lastLogin": "2026-08-19T07:09:03.787Z"
+    },
+    {
+      "_id": "6a547ae73c4594d94df6954a",
+      "email": "mnderitu239@gmail.com",
+      "password": "$2a$12$pAe442nPfcIjn0e/J0VQj.pQBxUaB0WF6lnS/orwk/XajfL8I/v0e",
+      "role": "class_teacher",
+      "firstName": "Michael",
+      "lastName": "Waigwa",
+      "phone": "0726271669",
+      "isActive": true,
+      "createdAt": "2026-07-13T05:43:03.318Z",
+      "updatedAt": "2026-08-18T06:51:17.341Z",
+      "__v": 0,
+      "lastLogin": "2026-08-18T06:51:17.341Z"
+    },
+    {
+      "_id": "6a54d777b5fca3ddd5c3ad27",
+      "email": "evamburugu@gmail.com",
+      "password": "$2a$12$sWFfw4FBwehbOsNgs5fuNuP5tI2CYKdon/Ha.9wvwMbvqVfFaAQAW",
+      "role": "academic_teacher",
+      "firstName": "Eva",
+      "lastName": "Mburugu",
+      "phone": "0101074743",
+      "isActive": true,
+      "createdAt": "2026-07-13T12:17:59.547Z",
+      "updatedAt": "2026-08-18T06:11:48.430Z",
+      "__v": 0,
+      "lastLogin": "2026-08-18T06:11:48.428Z"
+    },
+    {
+      "_id": "6a5f1af17a6c6ddaabdeafb9",
+      "email": "mwenda@gmail.com",
+      "password": "$2a$12$Cm4w4DCGWdqrZdRifRC83uCyeqxfAQc9CTcmBH8JO8zrNgz/BfyUG",
+      "role": "class_teacher",
+      "firstName": "Martin",
+      "lastName": "Mwenda",
+      "isActive": true,
+      "createdAt": "2026-07-21T07:08:33.746Z",
+      "updatedAt": "2026-07-31T09:47:57.655Z",
+      "__v": 0,
+      "lastLogin": "2026-07-31T09:47:57.655Z"
+    },
+    {
+      "_id": "6a5f20137a6c6ddaabdeb037",
+      "email": "simiyu@gmail.com",
+      "password": "$2a$12$SGtyEM.2f7yh9JQGMb1rDOsZmSAqbLhU7puQFPREWOtpZEY./wv.W",
+      "role": "class_teacher",
+      "firstName": "Joseph",
+      "lastName": "Simiyu",
+      "isActive": true,
+      "createdAt": "2026-07-21T07:30:27.398Z",
+      "updatedAt": "2026-08-21T06:35:31.769Z",
+      "__v": 0,
+      "lastLogin": "2026-08-21T06:35:31.754Z"
+    },
+    {
+      "_id": "6a6b0471ee3a2c4e66cc7267",
+      "email": "alban@gmail.com",
+      "password": "$2a$12$NKY4tfFPkJ3GuorLhSdSuOaZy3RzAv2wl8pB26OVeMMhzh9ozqczq",
+      "role": "class_teacher",
+      "firstName": "Alban",
+      "lastName": "Onyango",
+      "phone": "0712345678",
+      "isActive": true,
+      "createdAt": "2026-07-30T07:59:45.425Z",
+      "updatedAt": "2026-08-01T21:34:07.287Z",
+      "__v": 0,
+      "lastLogin": "2026-08-01T21:34:07.286Z"
+    },
+    {
+      "_id": "6a82c503440855807a3fc839",
+      "email": "headteacher@school.com",
+      "password": "$2a$12$By0gVu5cZS4tbxdHH2ZrdODk.3wh3koj4eNPX73Wp5.6AAhLIvPpO",
+      "role": "headteacher",
+      "firstName": "John",
+      "lastName": "Kimani",
+      "phone": "+254712345670",
+      "isActive": true,
+      "schoolId": "6a4f66cf182406e9756d9d0c",
+      "createdAt": "2026-08-17T08:23:31.138Z",
+      "updatedAt": "2026-08-19T07:16:44.033Z",
+      "__v": 0,
+      "lastLogin": "2026-08-19T07:16:44.023Z"
+    },
+    {
+      "_id": "6a82c519ceffb6b65dda62dd",
+      "email": "librarian@school.com",
+      "password": "$2a$12$pXz3d8TWwA3Dvf/HpvqSLeMjXYXRtPHNWlKT4ycganFJfuSEbJy.C",
+      "role": "librarian",
+      "firstName": "Mary",
+      "lastName": "Njeri",
+      "isActive": true,
+      "createdAt": "2026-08-17T08:23:53.080Z",
+      "updatedAt": "2026-08-19T07:09:04.359Z",
+      "__v": 0,
+      "lastLogin": "2026-08-19T07:09:04.359Z"
+    },
+    {
+      "_id": "6a82cdf7ceffb6b65dda642c",
+      "email": "faraja@gmail.com",
+      "password": "$2a$12$tTcHs01Z5Oo2cRtQjwWHgOCZNuUVC6aqhOqZlkkelF2hcuSC04n/e",
+      "role": "librarian",
+      "firstName": "Victor",
+      "lastName": "Faraja",
+      "phone": "0742762340",
+      "isActive": true,
+      "createdAt": "2026-08-17T09:01:43.606Z",
+      "updatedAt": "2026-08-21T06:41:18.018Z",
+      "__v": 0,
+      "lastLogin": "2026-08-21T06:41:18.016Z"
+    },
+    {
+      "_id": "6a82f46715fdd570a5642286",
+      "email": "testmath@school.com",
+      "password": "$2a$12$5VJmv6JQBQdPnrEixjeeqe8s/whMtbxCNdHt1IXYa4sNPZLklpkry",
+      "role": "subject_teacher",
+      "firstName": "Test",
+      "lastName": "MathTeacher",
+      "isActive": false,
+      "createdAt": "2026-08-17T11:45:43.175Z",
+      "updatedAt": "2026-08-17T11:51:44.978Z",
+      "__v": 0,
+      "lastLogin": "2026-08-17T11:51:01.689Z"
+    },
+    {
+      "_id": "6a82f46815fdd570a5642294",
+      "email": "testeng@school.com",
+      "password": "$2a$12$I2gk6dpPp7jP6dho7bOT1eZJpldRgJCm.yjuQZvY1INmRxHHFMBQW",
+      "role": "subject_teacher",
+      "firstName": "Test",
+      "lastName": "EngTeacher",
+      "isActive": false,
+      "createdAt": "2026-08-17T11:45:44.811Z",
+      "updatedAt": "2026-08-18T06:36:06.811Z",
+      "__v": 0,
+      "lastLogin": "2026-08-17T11:51:03.112Z"
+    },
+    {
+      "_id": "6a82f8bdbbba287186547ac5",
+      "email": "sakaja@gmail.com",
+      "password": "$2a$12$FRXPR2SXlv6u16EOyNWPCu43UkbGPjWY2ChL9QRf7K7RFjzB/RMwO",
+      "role": "class_teacher",
+      "firstName": "Johnson",
+      "lastName": "Sakaja",
+      "phone": "0792354036",
+      "isActive": true,
+      "createdAt": "2026-08-17T12:04:13.736Z",
+      "updatedAt": "2026-08-18T06:48:07.120Z",
+      "__v": 0,
+      "lastLogin": "2026-08-18T05:59:45.965Z"
+    },
+    {
+      "_id": "6a82f971bbba287186547c60",
+      "email": "cate@gmail.com",
+      "password": "$2a$12$JCcYrX8vE5XR1cFTIxFsye.MwIxpgnkrM1ThEYCa0BmpgIumCsECe",
+      "role": "class_teacher",
+      "firstName": "Cathrine",
+      "lastName": "Katumia",
+      "phone": "0758610440",
+      "isActive": true,
+      "createdAt": "2026-08-17T12:07:13.757Z",
+      "updatedAt": "2026-08-18T06:48:22.844Z",
+      "__v": 0,
+      "lastLogin": "2026-08-17T12:31:11.069Z"
+    },
+    {
+      "_id": "6a82fc5c0f10feb9c938b76e",
+      "email": "testacad@school.com",
+      "password": "$2a$12$PgTddACTEtfj.XjXotpIsOkJzgVvdYPhh1fc2MGmOP5D7NIccgv1W",
+      "role": "academic_teacher",
+      "firstName": "Test",
+      "lastName": "Acad",
+      "isActive": false,
+      "createdAt": "2026-08-17T12:19:40.925Z",
+      "updatedAt": "2026-08-18T06:35:42.763Z",
+      "__v": 0,
+      "lastLogin": "2026-08-17T12:19:41.907Z"
+    },
+    {
+      "_id": "6a83fbfe78e71ddba5f834e7",
+      "email": "deletetest@school.com",
+      "password": "$2a$12$GBu.9cVKZR81nFycyxj.o.V9fJAo57QW4j01SWOwhHbLJgNugQFkW",
+      "role": "subject_teacher",
+      "firstName": "Delete",
+      "lastName": "Test",
+      "isActive": false,
+      "createdAt": "2026-08-18T06:30:22.943Z",
+      "updatedAt": "2026-08-21T06:46:08.162Z",
+      "__v": 0
+    }
+  ],
+  "teachers": [
+    {
+      "_id": "6a4f66d0182406e9756d9d13",
+      "user": "6a4f66d0182406e9756d9d10",
+      "employeeId": "TCH-ADMIN-001",
+      "firstName": "John",
+      "lastName": "Kimani",
+      "gender": "male",
+      "qualifications": [
+        {
+          "degree": "PhD in Education",
+          "institution": "University of Nairobi",
+          "year": 2015,
+          "field": "Education",
+          "_id": "6a4f66d0182406e9756d9d14"
+        }
+      ],
+      "subjects": [],
+      "dateOfEmployment": "2020-01-15T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-09T09:16:00.872Z",
+      "updatedAt": "2026-07-30T07:16:52.803Z",
+      "__v": 0,
+      "designation": "senior_teacher",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d1d",
+      "user": "6a4f66d0182406e9756d9d17",
+      "employeeId": "TCH-001",
+      "firstName": "Jane",
+      "lastName": "Wanjiku",
+      "gender": "female",
+      "subjects": [
+        "6a5f228c7a6c6ddaabdeb091"
+      ],
+      "dateOfEmployment": "2021-02-01T00:00:00.000Z",
+      "qualifications": [],
+      "documents": [],
+      "createdAt": "2026-07-09T09:16:01.680Z",
+      "updatedAt": "2026-07-21T13:36:58.820Z",
+      "__v": 0,
+      "classAssigned": "6a54ce2950722770837f977a",
+      "designation": "teacher",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d20",
+      "user": "6a4f66d1182406e9756d9d1a",
+      "employeeId": "TCH-002",
+      "firstName": "Peter",
+      "lastName": "Ochieng",
+      "gender": "male",
+      "subjects": [
+        "6a4f66d1182406e9756d9d44"
+      ],
+      "dateOfEmployment": "2021-02-01T00:00:00.000Z",
+      "qualifications": [],
+      "documents": [],
+      "createdAt": "2026-07-09T09:16:01.685Z",
+      "updatedAt": "2026-07-21T13:36:27.878Z",
+      "__v": 0,
+      "classAssigned": "6a4f66d1182406e9756d9d2c",
+      "designation": "teacher",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a547ae83c4594d94df6954d",
+      "user": "6a547ae73c4594d94df6954a",
+      "employeeId": "TCH/0004",
+      "firstName": "Michael",
+      "lastName": "Waigwa",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d41"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-07-13T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-13T05:43:04.419Z",
+      "updatedAt": "2026-07-21T11:53:52.463Z",
+      "__v": 0,
+      "emergencyContact": {},
+      "classAssigned": "6a4f66d1182406e9756d9d23"
+    },
+    {
+      "_id": "6a54d777b5fca3ddd5c3ad2a",
+      "user": "6a54d777b5fca3ddd5c3ad27",
+      "employeeId": "TCH/0005",
+      "firstName": "Eva",
+      "lastName": "Mburugu",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d41"
+      ],
+      "designation": "head_of_academics",
+      "dateOfEmployment": "2026-07-13T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-13T12:17:59.938Z",
+      "updatedAt": "2026-07-21T06:39:34.195Z",
+      "__v": 0,
+      "emergencyContact": {},
+      "address": {
+        "street": "some address string"
+      }
+    },
+    {
+      "_id": "6a5f1af27a6c6ddaabdeafbc",
+      "user": "6a5f1af17a6c6ddaabdeafb9",
+      "employeeId": "TCH/0006",
+      "firstName": "Martin",
+      "lastName": "Mwenda",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d3e"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-07-21T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-21T07:08:34.488Z",
+      "updatedAt": "2026-07-21T11:57:21.432Z",
+      "__v": 0,
+      "classAssigned": "6a5f2f7a1bc2fca7f569e714",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a5f20137a6c6ddaabdeb03a",
+      "user": "6a5f20137a6c6ddaabdeb037",
+      "employeeId": "TCH/0007",
+      "firstName": "Joseph",
+      "lastName": "Simiyu",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d47"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-07-21T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-21T07:30:27.762Z",
+      "updatedAt": "2026-07-21T11:57:08.260Z",
+      "__v": 0,
+      "classAssigned": "6a5f2f4f1bc2fca7f569e6cc",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a6b0472ee3a2c4e66cc726a",
+      "user": "6a6b0471ee3a2c4e66cc7267",
+      "employeeId": "TCH/0008",
+      "firstName": "Alban",
+      "lastName": "Onyango",
+      "qualifications": [],
+      "subjects": [
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f228c7a6c6ddaabdeb091"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-07-30T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-07-30T07:59:46.169Z",
+      "updatedAt": "2026-07-31T09:48:54.778Z",
+      "__v": 0,
+      "classAssigned": "6a4f66d1182406e9756d9d23",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a82f46715fdd570a5642289",
+      "user": "6a82f46715fdd570a5642286",
+      "employeeId": "TCH/0009",
+      "firstName": "Test",
+      "lastName": "MathTeacher",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d3e"
+      ],
+      "designation": "teacher",
+      "documents": [],
+      "createdAt": "2026-08-17T11:45:43.841Z",
+      "updatedAt": "2026-08-17T11:45:43.841Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a82f46915fdd570a5642297",
+      "user": "6a82f46815fdd570a5642294",
+      "employeeId": "TCH/0010",
+      "firstName": "Test",
+      "lastName": "EngTeacher",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d41"
+      ],
+      "designation": "teacher",
+      "documents": [],
+      "createdAt": "2026-08-17T11:45:45.341Z",
+      "updatedAt": "2026-08-17T11:45:45.341Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a82f8bebbba287186547ac8",
+      "user": "6a82f8bdbbba287186547ac5",
+      "employeeId": "TCH/0011",
+      "firstName": "Johnson",
+      "lastName": "Sakaja",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d44"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-08-17T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-08-17T12:04:14.205Z",
+      "updatedAt": "2026-08-18T06:48:07.006Z",
+      "__v": 0,
+      "emergencyContact": {},
+      "classAssigned": "6a674aa62a3e3b301d257155"
+    },
+    {
+      "_id": "6a82f972bbba287186547c63",
+      "user": "6a82f971bbba287186547c60",
+      "employeeId": "TCH/0012",
+      "firstName": "Cathrine",
+      "lastName": "Katumia",
+      "qualifications": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d3e"
+      ],
+      "designation": "teacher",
+      "dateOfEmployment": "2026-08-17T00:00:00.000Z",
+      "documents": [],
+      "createdAt": "2026-08-17T12:07:14.202Z",
+      "updatedAt": "2026-08-18T06:48:22.574Z",
+      "__v": 0,
+      "classAssigned": "6a674aeb2a3e3b301d2571fe",
+      "emergencyContact": {}
+    },
+    {
+      "_id": "6a82fc5d0f10feb9c938b771",
+      "user": "6a82fc5c0f10feb9c938b76e",
+      "employeeId": "TCH/0013",
+      "firstName": "Test",
+      "lastName": "Acad",
+      "qualifications": [],
+      "subjects": [],
+      "designation": "teacher",
+      "documents": [],
+      "createdAt": "2026-08-17T12:19:41.410Z",
+      "updatedAt": "2026-08-17T12:19:41.410Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a83fbff78e71ddba5f834ea",
+      "user": "6a83fbfe78e71ddba5f834e7",
+      "employeeId": "TCH/0014",
+      "firstName": "Delete",
+      "lastName": "Test",
+      "subjects": [],
+      "designation": "teacher",
+      "createdAt": "2026-08-18T06:30:23.416Z",
+      "updatedAt": "2026-08-18T06:30:23.416Z",
+      "qualifications": [],
+      "documents": [],
+      "__v": 0
+    }
+  ],
+  "students": [
+    {
+      "_id": "6a4f66d2182406e9756d9d73",
+      "admissionNumber": "STU/2025/0001",
+      "firstName": "Alice",
+      "lastName": "Wambui",
+      "gender": "female",
+      "dateOfBirth": "2017-06-24T00:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "guardianInfo": {
+        "name": "Parent of Alice Wambui",
+        "phone": "+254743912356",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.216Z",
+      "updatedAt": "2026-08-19T08:05:08.397Z",
+      "__v": 0,
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      }
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d77",
+      "admissionNumber": "STU/2025/0002",
+      "firstName": "Brian",
+      "lastName": "Kiprop",
+      "gender": "male",
+      "dateOfBirth": "2016-03-31T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d2c",
+      "stream": "6a4f66d1182406e9756d9d32",
+      "guardianInfo": {
+        "name": "Parent of Brian Kiprop",
+        "phone": "+254735995681",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.225Z",
+      "updatedAt": "2026-07-09T09:16:02.225Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d7b",
+      "admissionNumber": "STU/2025/0003",
+      "firstName": "Cynthia",
+      "lastName": "Atieno",
+      "gender": "female",
+      "dateOfBirth": "2015-08-26T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d35",
+      "stream": "6a4f66d1182406e9756d9d38",
+      "guardianInfo": {
+        "name": "Parent of Cynthia Atieno",
+        "phone": "+254783486183",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.231Z",
+      "updatedAt": "2026-07-09T09:16:02.231Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d7f",
+      "admissionNumber": "STU/2025/0004",
+      "firstName": "David",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "dateOfBirth": "2014-01-15T00:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "guardianInfo": {
+        "name": "Parent of David Mwangi",
+        "phone": "+254778677364",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.239Z",
+      "updatedAt": "2026-07-29T13:00:34.103Z",
+      "__v": 0,
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      }
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d83",
+      "admissionNumber": "STU/2025/0005",
+      "firstName": "Esther",
+      "lastName": "Njoki",
+      "gender": "female",
+      "dateOfBirth": "2013-03-16T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d2c",
+      "stream": "6a4f66d1182406e9756d9d2f",
+      "guardianInfo": {
+        "name": "Parent of Esther Njoki",
+        "phone": "+254768866903",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.245Z",
+      "updatedAt": "2026-07-09T09:16:02.245Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d87",
+      "admissionNumber": "STU/2025/0006",
+      "firstName": "Francis",
+      "lastName": "Omondi",
+      "gender": "male",
+      "dateOfBirth": "2017-07-19T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d35",
+      "stream": "6a4f66d1182406e9756d9d3b",
+      "guardianInfo": {
+        "name": "Parent of Francis Omondi",
+        "phone": "+254763925616",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.253Z",
+      "updatedAt": "2026-07-09T09:16:02.253Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d8b",
+      "admissionNumber": "STU/2025/0007",
+      "firstName": "Grace",
+      "lastName": "Akinyi",
+      "gender": "female",
+      "dateOfBirth": "2013-01-07T00:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "guardianInfo": {
+        "name": "Parent of Grace Akinyi",
+        "phone": "+254763848798",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.258Z",
+      "updatedAt": "2026-07-29T13:00:10.347Z",
+      "__v": 0,
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      }
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d8f",
+      "admissionNumber": "STU/2025/0008",
+      "firstName": "Henry",
+      "lastName": "Kamau",
+      "gender": "male",
+      "dateOfBirth": "2014-12-07T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d2c",
+      "stream": "6a4f66d1182406e9756d9d32",
+      "guardianInfo": {
+        "name": "Parent of Henry Kamau",
+        "phone": "+254751645981",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.267Z",
+      "updatedAt": "2026-07-09T09:16:02.267Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d93",
+      "admissionNumber": "STU/2025/0009",
+      "firstName": "Irene",
+      "lastName": "Chebet",
+      "gender": "female",
+      "dateOfBirth": "2012-11-21T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d35",
+      "stream": "6a4f66d1182406e9756d9d38",
+      "guardianInfo": {
+        "name": "Parent of Irene Chebet",
+        "phone": "+254711531961",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.273Z",
+      "updatedAt": "2026-07-09T09:16:02.273Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d97",
+      "admissionNumber": "STU/2025/0010",
+      "firstName": "James",
+      "lastName": "Ndirangu",
+      "gender": "male",
+      "dateOfBirth": "2016-08-12T00:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "guardianInfo": {
+        "name": "Parent of James Ndirangu",
+        "phone": "+254744079467",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.280Z",
+      "updatedAt": "2026-07-29T12:59:48.908Z",
+      "__v": 0,
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      }
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d9b",
+      "admissionNumber": "STU/2025/0011",
+      "firstName": "Kevin",
+      "lastName": "Otieno",
+      "gender": "male",
+      "dateOfBirth": "2012-09-24T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d2c",
+      "stream": "6a4f66d1182406e9756d9d2f",
+      "guardianInfo": {
+        "name": "Parent of Kevin Otieno",
+        "phone": "+254734097717",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.286Z",
+      "updatedAt": "2026-07-09T09:16:02.286Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d9f",
+      "admissionNumber": "STU/2025/0012",
+      "firstName": "Linda",
+      "lastName": "Wanjala",
+      "gender": "female",
+      "dateOfBirth": "2012-05-15T21:00:00.000Z",
+      "class": "6a4f66d1182406e9756d9d35",
+      "stream": "6a4f66d1182406e9756d9d3b",
+      "guardianInfo": {
+        "name": "Parent of Linda Wanjala",
+        "phone": "+254715192712",
+        "relationship": "parent"
+      },
+      "enrollmentDate": "2025-01-15T00:00:00.000Z",
+      "status": "active",
+      "academicHistory": [],
+      "createdAt": "2026-07-09T09:16:02.292Z",
+      "updatedAt": "2026-07-09T09:16:02.292Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f130e",
+      "firstName": "David",
+      "lastName": "Cheruiyot",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.867Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.868Z",
+      "updatedAt": "2026-07-21T09:25:35.868Z",
+      "admissionNumber": "STU/2026/0013",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1313",
+      "firstName": "Grace",
+      "lastName": "Wanjiku",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.930Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.931Z",
+      "updatedAt": "2026-07-21T09:25:35.931Z",
+      "admissionNumber": "STU/2026/0014",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1318",
+      "firstName": "Brian",
+      "lastName": "Koech",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.938Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.939Z",
+      "updatedAt": "2026-07-21T09:25:35.939Z",
+      "admissionNumber": "STU/2026/0015",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f131c",
+      "firstName": "Paul",
+      "lastName": "Muthoni",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.944Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.945Z",
+      "updatedAt": "2026-07-21T09:25:35.945Z",
+      "admissionNumber": "STU/2026/0016",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1320",
+      "firstName": "Ann",
+      "lastName": "Nduta",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.951Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.951Z",
+      "updatedAt": "2026-07-21T09:25:35.951Z",
+      "admissionNumber": "STU/2026/0017",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1325",
+      "firstName": "Ann",
+      "lastName": "Wambui",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.959Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.959Z",
+      "updatedAt": "2026-07-21T09:25:35.959Z",
+      "admissionNumber": "STU/2026/0018",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f132a",
+      "firstName": "Lucy",
+      "lastName": "Musyoka",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.967Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.967Z",
+      "updatedAt": "2026-07-21T09:25:35.967Z",
+      "admissionNumber": "STU/2026/0019",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f132f",
+      "firstName": "Brian",
+      "lastName": "Kimani",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.975Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.975Z",
+      "updatedAt": "2026-07-21T09:25:35.975Z",
+      "admissionNumber": "STU/2026/0020",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1333",
+      "firstName": "James",
+      "lastName": "Muthoni",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.980Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.981Z",
+      "updatedAt": "2026-07-21T09:25:35.981Z",
+      "admissionNumber": "STU/2026/0021",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1337",
+      "firstName": "Ruth",
+      "lastName": "Wambui",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.985Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.986Z",
+      "updatedAt": "2026-07-21T09:25:35.986Z",
+      "admissionNumber": "STU/2026/0022",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f133b",
+      "firstName": "Ruth",
+      "lastName": "Otieno",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.991Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.991Z",
+      "updatedAt": "2026-07-21T09:25:35.991Z",
+      "admissionNumber": "STU/2026/0023",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b0f8fe7bb788c5f1340",
+      "firstName": "Peter",
+      "lastName": "Gathoni",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:35.998Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:35.998Z",
+      "updatedAt": "2026-07-21T09:25:35.998Z",
+      "admissionNumber": "STU/2026/0024",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1345",
+      "firstName": "Mercy",
+      "lastName": "Achieng",
+      "gender": "male",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.007Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.008Z",
+      "updatedAt": "2026-07-21T09:25:36.008Z",
+      "admissionNumber": "STU/2026/0025",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f134a",
+      "firstName": "Mark",
+      "lastName": "Wanjiku",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.014Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.015Z",
+      "updatedAt": "2026-07-21T09:25:36.015Z",
+      "admissionNumber": "STU/2026/0026",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f134f",
+      "firstName": "Faith",
+      "lastName": "Maina",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.022Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.022Z",
+      "updatedAt": "2026-07-21T09:25:36.022Z",
+      "admissionNumber": "STU/2026/0027",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1354",
+      "firstName": "David",
+      "lastName": "Kariuki",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.029Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.029Z",
+      "updatedAt": "2026-07-21T09:25:36.029Z",
+      "admissionNumber": "STU/2026/0028",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1359",
+      "firstName": "Joy",
+      "lastName": "Achieng",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.035Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.035Z",
+      "updatedAt": "2026-07-21T09:25:36.035Z",
+      "admissionNumber": "STU/2026/0029",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f135e",
+      "firstName": "Esther",
+      "lastName": "Koech",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.042Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.042Z",
+      "updatedAt": "2026-07-21T09:25:36.042Z",
+      "admissionNumber": "STU/2026/0030",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1362",
+      "firstName": "Brian",
+      "lastName": "Kariuki",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.047Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.048Z",
+      "updatedAt": "2026-07-21T09:25:36.048Z",
+      "admissionNumber": "STU/2026/0031",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1367",
+      "firstName": "Esther",
+      "lastName": "Njoroge",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.055Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.055Z",
+      "updatedAt": "2026-07-21T09:25:36.055Z",
+      "admissionNumber": "STU/2026/0032",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f136b",
+      "firstName": "Lucy",
+      "lastName": "Omondi",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.060Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.060Z",
+      "updatedAt": "2026-07-21T09:25:36.060Z",
+      "admissionNumber": "STU/2026/0033",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1370",
+      "firstName": "Mary",
+      "lastName": "Achieng",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.066Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.067Z",
+      "updatedAt": "2026-07-21T09:25:36.067Z",
+      "admissionNumber": "STU/2026/0034",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1374",
+      "firstName": "John",
+      "lastName": "Cheruiyot",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.072Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.073Z",
+      "updatedAt": "2026-07-21T09:25:36.073Z",
+      "admissionNumber": "STU/2026/0035",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1379",
+      "firstName": "Mary",
+      "lastName": "Nduta",
+      "gender": "female",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.079Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.080Z",
+      "updatedAt": "2026-07-21T09:25:36.080Z",
+      "admissionNumber": "STU/2026/0036",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f137d",
+      "firstName": "Faith",
+      "lastName": "Wanjiku",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.084Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.085Z",
+      "updatedAt": "2026-07-21T09:25:36.085Z",
+      "admissionNumber": "STU/2026/0037",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1381",
+      "firstName": "Mercy",
+      "lastName": "Kimani",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.090Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.091Z",
+      "updatedAt": "2026-07-21T09:25:36.091Z",
+      "admissionNumber": "STU/2026/0038",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1386",
+      "firstName": "Faith",
+      "lastName": "Koech",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.098Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.098Z",
+      "updatedAt": "2026-07-21T09:25:36.098Z",
+      "admissionNumber": "STU/2026/0039",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f138a",
+      "firstName": "Samuel",
+      "lastName": "Koech",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.103Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.103Z",
+      "updatedAt": "2026-07-21T09:25:36.103Z",
+      "admissionNumber": "STU/2026/0040",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f138f",
+      "firstName": "David",
+      "lastName": "Wambui",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.110Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.111Z",
+      "updatedAt": "2026-07-21T09:25:36.111Z",
+      "admissionNumber": "STU/2026/0041",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1393",
+      "firstName": "Mary",
+      "lastName": "Nduta",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.116Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.116Z",
+      "updatedAt": "2026-07-21T09:25:36.116Z",
+      "admissionNumber": "STU/2026/0042",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1398",
+      "firstName": "Lucy",
+      "lastName": "Kamau",
+      "gender": "female",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.122Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.123Z",
+      "updatedAt": "2026-07-21T09:25:36.123Z",
+      "admissionNumber": "STU/2026/0043",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f139d",
+      "firstName": "Kevin",
+      "lastName": "Kiptoo",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.130Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.130Z",
+      "updatedAt": "2026-07-21T09:25:36.130Z",
+      "admissionNumber": "STU/2026/0044",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13a1",
+      "firstName": "John",
+      "lastName": "Wanjiku",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.136Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.136Z",
+      "updatedAt": "2026-07-21T09:25:36.136Z",
+      "admissionNumber": "STU/2026/0045",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13a6",
+      "firstName": "Mercy",
+      "lastName": "Kariuki",
+      "gender": "male",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.143Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.144Z",
+      "updatedAt": "2026-07-21T09:25:36.144Z",
+      "admissionNumber": "STU/2026/0046",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13aa",
+      "firstName": "Grace",
+      "lastName": "Njoroge",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.149Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.150Z",
+      "updatedAt": "2026-07-21T09:25:36.150Z",
+      "admissionNumber": "STU/2026/0047",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13ae",
+      "firstName": "David",
+      "lastName": "Kamau",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.156Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.156Z",
+      "updatedAt": "2026-07-21T09:25:36.156Z",
+      "admissionNumber": "STU/2026/0048",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13b2",
+      "firstName": "Kevin",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.162Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.162Z",
+      "updatedAt": "2026-07-21T09:25:36.162Z",
+      "admissionNumber": "STU/2026/0049",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13b6",
+      "firstName": "Faith",
+      "lastName": "Cheruiyot",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.168Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.168Z",
+      "updatedAt": "2026-07-21T09:25:36.168Z",
+      "admissionNumber": "STU/2026/0050",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13ba",
+      "firstName": "Kevin",
+      "lastName": "Muthoni",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.173Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.174Z",
+      "updatedAt": "2026-07-21T09:25:36.174Z",
+      "admissionNumber": "STU/2026/0051",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13bf",
+      "firstName": "Ruth",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.181Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.181Z",
+      "updatedAt": "2026-07-21T09:25:36.181Z",
+      "admissionNumber": "STU/2026/0052",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13c4",
+      "firstName": "Mary",
+      "lastName": "Wambui",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.188Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.189Z",
+      "updatedAt": "2026-07-21T09:25:36.189Z",
+      "admissionNumber": "STU/2026/0053",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13c9",
+      "firstName": "Lucy",
+      "lastName": "Mutiso",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.196Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.196Z",
+      "updatedAt": "2026-07-21T09:25:36.196Z",
+      "admissionNumber": "STU/2026/0054",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13ce",
+      "firstName": "Lydia",
+      "lastName": "Gathoni",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.203Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.204Z",
+      "updatedAt": "2026-07-21T09:25:36.204Z",
+      "admissionNumber": "STU/2026/0055",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13d2",
+      "firstName": "Kevin",
+      "lastName": "Musyoka",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.210Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.210Z",
+      "updatedAt": "2026-07-21T09:25:36.210Z",
+      "admissionNumber": "STU/2026/0056",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13d7",
+      "firstName": "Lucy",
+      "lastName": "Otieno",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.216Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.216Z",
+      "updatedAt": "2026-07-21T09:25:36.216Z",
+      "admissionNumber": "STU/2026/0057",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13dc",
+      "firstName": "Ruth",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.222Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.222Z",
+      "updatedAt": "2026-07-21T09:25:36.222Z",
+      "admissionNumber": "STU/2026/0058",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13e0",
+      "firstName": "Ruth",
+      "lastName": "Kariuki",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.227Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.227Z",
+      "updatedAt": "2026-07-21T09:25:36.227Z",
+      "admissionNumber": "STU/2026/0059",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13e4",
+      "firstName": "David",
+      "lastName": "Kariuki",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.231Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.231Z",
+      "updatedAt": "2026-07-21T09:25:36.231Z",
+      "admissionNumber": "STU/2026/0060",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13e9",
+      "firstName": "Daniel",
+      "lastName": "Omondi",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.237Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.237Z",
+      "updatedAt": "2026-07-21T09:25:36.237Z",
+      "admissionNumber": "STU/2026/0061",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13ee",
+      "firstName": "Brian",
+      "lastName": "Cheruiyot",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.243Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.243Z",
+      "updatedAt": "2026-07-21T09:25:36.243Z",
+      "admissionNumber": "STU/2026/0062",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13f3",
+      "firstName": "Grace",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.249Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.249Z",
+      "updatedAt": "2026-07-21T09:25:36.249Z",
+      "admissionNumber": "STU/2026/0063",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13f7",
+      "firstName": "Daniel",
+      "lastName": "Achieng",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.253Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.254Z",
+      "updatedAt": "2026-07-21T09:25:36.254Z",
+      "admissionNumber": "STU/2026/0064",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f13fc",
+      "firstName": "Kevin",
+      "lastName": "Mutiso",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.259Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.260Z",
+      "updatedAt": "2026-07-21T09:25:36.260Z",
+      "admissionNumber": "STU/2026/0065",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1401",
+      "firstName": "Esther",
+      "lastName": "Otieno",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.266Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.266Z",
+      "updatedAt": "2026-07-21T09:25:36.266Z",
+      "admissionNumber": "STU/2026/0066",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1405",
+      "firstName": "Ann",
+      "lastName": "Musyoka",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.270Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.270Z",
+      "updatedAt": "2026-07-21T09:25:36.270Z",
+      "admissionNumber": "STU/2026/0067",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1409",
+      "firstName": "John",
+      "lastName": "Kariuki",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.275Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.275Z",
+      "updatedAt": "2026-07-21T09:25:36.275Z",
+      "admissionNumber": "STU/2026/0068",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f140d",
+      "firstName": "David",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.280Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.280Z",
+      "updatedAt": "2026-07-21T09:25:36.280Z",
+      "admissionNumber": "STU/2026/0069",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1412",
+      "firstName": "Mark",
+      "lastName": "Mutiso",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.286Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.286Z",
+      "updatedAt": "2026-07-21T09:25:36.286Z",
+      "admissionNumber": "STU/2026/0070",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1417",
+      "firstName": "Lucy",
+      "lastName": "Muthoni",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.292Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.292Z",
+      "updatedAt": "2026-07-21T09:25:36.292Z",
+      "admissionNumber": "STU/2026/0071",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f141b",
+      "firstName": "Ruth",
+      "lastName": "Nduta",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.297Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.297Z",
+      "updatedAt": "2026-07-21T09:25:36.297Z",
+      "admissionNumber": "STU/2026/0072",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1420",
+      "firstName": "Mary",
+      "lastName": "Gathoni",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.303Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.303Z",
+      "updatedAt": "2026-07-21T09:25:36.303Z",
+      "admissionNumber": "STU/2026/0073",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1424",
+      "firstName": "Esther",
+      "lastName": "Omondi",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.307Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.308Z",
+      "updatedAt": "2026-07-21T09:25:36.308Z",
+      "admissionNumber": "STU/2026/0074",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1429",
+      "firstName": "Grace",
+      "lastName": "Otieno",
+      "gender": "male",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.313Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.313Z",
+      "updatedAt": "2026-07-21T09:25:36.313Z",
+      "admissionNumber": "STU/2026/0075",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f142d",
+      "firstName": "Mary",
+      "lastName": "Omondi",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.318Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.318Z",
+      "updatedAt": "2026-07-21T09:25:36.318Z",
+      "admissionNumber": "STU/2026/0076",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1431",
+      "firstName": "Mercy",
+      "lastName": "Kimani",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.322Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.322Z",
+      "updatedAt": "2026-07-21T09:25:36.322Z",
+      "admissionNumber": "STU/2026/0077",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1436",
+      "firstName": "Brian",
+      "lastName": "Omondi",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.328Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.328Z",
+      "updatedAt": "2026-07-21T09:25:36.328Z",
+      "admissionNumber": "STU/2026/0078",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f143b",
+      "firstName": "Brian",
+      "lastName": "Omondi",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.334Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.334Z",
+      "updatedAt": "2026-07-21T09:25:36.334Z",
+      "admissionNumber": "STU/2026/0079",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1440",
+      "firstName": "Samuel",
+      "lastName": "Wanjiku",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.340Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.340Z",
+      "updatedAt": "2026-07-21T09:25:36.340Z",
+      "admissionNumber": "STU/2026/0080",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1445",
+      "firstName": "David",
+      "lastName": "Muthoni",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.346Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.346Z",
+      "updatedAt": "2026-07-21T09:25:36.346Z",
+      "admissionNumber": "STU/2026/0081",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f144a",
+      "firstName": "Peter",
+      "lastName": "Musyoka",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.352Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.352Z",
+      "updatedAt": "2026-07-21T09:25:36.352Z",
+      "admissionNumber": "STU/2026/0082",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f144f",
+      "firstName": "Mary",
+      "lastName": "Wambui",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.358Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.358Z",
+      "updatedAt": "2026-07-21T09:25:36.358Z",
+      "admissionNumber": "STU/2026/0083",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1454",
+      "firstName": "Esther",
+      "lastName": "Maina",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.365Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.366Z",
+      "updatedAt": "2026-07-21T09:25:36.366Z",
+      "admissionNumber": "STU/2026/0084",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1458",
+      "firstName": "Peter",
+      "lastName": "Achieng",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.370Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.370Z",
+      "updatedAt": "2026-07-30T18:36:10.148Z",
+      "admissionNumber": "STU/2026/0085",
+      "__v": 0,
+      "class": "6a674aa62a3e3b301d257155",
+      "guardianInfo": {
+        "name": "Aggrey",
+        "phone": "ooro",
+        "relationship": ""
+      }
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f145d",
+      "firstName": "Lydia",
+      "lastName": "Wambui",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.376Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.376Z",
+      "updatedAt": "2026-07-21T09:25:36.376Z",
+      "admissionNumber": "STU/2026/0086",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1461",
+      "firstName": "Samuel",
+      "lastName": "Kariuki",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.381Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.381Z",
+      "updatedAt": "2026-07-30T18:35:05.848Z",
+      "admissionNumber": "STU/2026/0087",
+      "__v": 0,
+      "class": "6a674aa62a3e3b301d257155",
+      "guardianInfo": {
+        "name": "michael",
+        "phone": "muthii",
+        "relationship": ""
+      }
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1466",
+      "firstName": "John",
+      "lastName": "Mwangi",
+      "gender": "female",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.387Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.387Z",
+      "updatedAt": "2026-07-21T09:25:36.387Z",
+      "admissionNumber": "STU/2026/0088",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f146a",
+      "firstName": "Kevin",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.391Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.392Z",
+      "updatedAt": "2026-07-30T18:34:20.462Z",
+      "admissionNumber": "STU/2026/0089",
+      "__v": 0,
+      "class": "6a674aa62a3e3b301d257155",
+      "guardianInfo": {
+        "name": "Paul",
+        "phone": "Kuria",
+        "relationship": ""
+      }
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f146f",
+      "firstName": "Mary",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.397Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.398Z",
+      "updatedAt": "2026-07-21T09:25:36.398Z",
+      "admissionNumber": "STU/2026/0090",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1474",
+      "firstName": "John",
+      "lastName": "Musyoka",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.404Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.404Z",
+      "updatedAt": "2026-07-21T09:25:36.404Z",
+      "admissionNumber": "STU/2026/0091",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1479",
+      "firstName": "David",
+      "lastName": "Cheruiyot",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.410Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.410Z",
+      "updatedAt": "2026-07-21T09:25:36.410Z",
+      "admissionNumber": "STU/2026/0092",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f147e",
+      "firstName": "Faith",
+      "lastName": "Kimani",
+      "gender": "female",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.416Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.416Z",
+      "updatedAt": "2026-07-21T09:25:36.416Z",
+      "admissionNumber": "STU/2026/0093",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1483",
+      "firstName": "Grace",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.422Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.422Z",
+      "updatedAt": "2026-07-21T09:25:36.422Z",
+      "admissionNumber": "STU/2026/0094",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1487",
+      "firstName": "Peter",
+      "lastName": "Koech",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.427Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.427Z",
+      "updatedAt": "2026-07-30T18:33:12.181Z",
+      "admissionNumber": "STU/2026/0095",
+      "__v": 0,
+      "class": "6a674aa62a3e3b301d257155",
+      "guardianInfo": {
+        "name": "chris",
+        "phone": "korir",
+        "relationship": ""
+      }
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f148c",
+      "firstName": "Brian",
+      "lastName": "Wambui",
+      "gender": "female",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.433Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.433Z",
+      "updatedAt": "2026-07-21T09:25:36.433Z",
+      "admissionNumber": "STU/2026/0096",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1491",
+      "firstName": "Kevin",
+      "lastName": "Cheruiyot",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.440Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.440Z",
+      "updatedAt": "2026-07-21T09:25:36.440Z",
+      "admissionNumber": "STU/2026/0097",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f1496",
+      "firstName": "Ann",
+      "lastName": "Achieng",
+      "gender": "female",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.447Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.447Z",
+      "updatedAt": "2026-07-21T09:25:36.447Z",
+      "admissionNumber": "STU/2026/0098",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f149b",
+      "firstName": "Mark",
+      "lastName": "Gathoni",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.452Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.452Z",
+      "updatedAt": "2026-07-21T09:25:36.452Z",
+      "admissionNumber": "STU/2026/0099",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14a0",
+      "firstName": "Joy",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.458Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.459Z",
+      "updatedAt": "2026-07-21T09:25:36.459Z",
+      "admissionNumber": "STU/2026/0100",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14a4",
+      "firstName": "Peter",
+      "lastName": "Kibet",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.463Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.463Z",
+      "updatedAt": "2026-07-30T18:32:18.114Z",
+      "admissionNumber": "STU/2026/0101",
+      "__v": 0,
+      "class": "6a674aa62a3e3b301d257155",
+      "guardianInfo": {
+        "name": "Daniel",
+        "phone": "Moi",
+        "relationship": ""
+      }
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14a9",
+      "firstName": "James",
+      "lastName": "Wambui",
+      "gender": "female",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.470Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.470Z",
+      "updatedAt": "2026-07-21T09:25:36.470Z",
+      "admissionNumber": "STU/2026/0102",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14ae",
+      "firstName": "Peter",
+      "lastName": "Omondi",
+      "gender": "female",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.477Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.477Z",
+      "updatedAt": "2026-07-21T09:25:36.477Z",
+      "admissionNumber": "STU/2026/0103",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14b2",
+      "firstName": "Kevin",
+      "lastName": "Mwangi",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.482Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.482Z",
+      "updatedAt": "2026-07-30T18:25:01.246Z",
+      "admissionNumber": "STU/2026/0104",
+      "__v": 0,
+      "class": "6a4f66d1182406e9756d9d23",
+      "guardianInfo": {
+        "name": "johnson",
+        "phone": "sakaja",
+        "relationship": ""
+      },
+      "stream": "6a5f56fd8a6c3af9f13e3f34"
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14b7",
+      "firstName": "Ann",
+      "lastName": "Cheruiyot",
+      "gender": "male",
+      "class": "6a54ce2950722770837f977a",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.487Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.488Z",
+      "updatedAt": "2026-07-21T09:25:36.488Z",
+      "admissionNumber": "STU/2026/0105",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14bb",
+      "firstName": "Lucy",
+      "lastName": "Koech",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.492Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.492Z",
+      "updatedAt": "2026-07-30T18:26:08.708Z",
+      "admissionNumber": "STU/2026/0106",
+      "__v": 0,
+      "class": "6a4f66d1182406e9756d9d23",
+      "guardianInfo": {
+        "name": "Sharon",
+        "phone": "Jepkemboi",
+        "relationship": ""
+      },
+      "stream": "6a5f56fd8a6c3af9f13e3f35"
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14c0",
+      "firstName": "Samuel",
+      "lastName": "Wambui",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.498Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.498Z",
+      "updatedAt": "2026-07-21T09:25:36.498Z",
+      "admissionNumber": "STU/2026/0107",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14c5",
+      "firstName": "Daniel",
+      "lastName": "Kiptoo",
+      "gender": "male",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.503Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.504Z",
+      "updatedAt": "2026-07-21T09:25:36.504Z",
+      "admissionNumber": "STU/2026/0108",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14ca",
+      "firstName": "Kevin",
+      "lastName": "Nduta",
+      "gender": "male",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.512Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.512Z",
+      "updatedAt": "2026-07-21T09:25:36.512Z",
+      "admissionNumber": "STU/2026/0109",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14ce",
+      "firstName": "Grace",
+      "lastName": "Njoroge",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.517Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.517Z",
+      "updatedAt": "2026-07-30T18:26:56.915Z",
+      "admissionNumber": "STU/2026/0110",
+      "__v": 0,
+      "class": "6a4f66d1182406e9756d9d23",
+      "guardianInfo": {
+        "name": "joy",
+        "phone": "Njeri",
+        "relationship": ""
+      },
+      "stream": "6a5f56fd8a6c3af9f13e3f34"
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14d2",
+      "firstName": "Grace",
+      "lastName": "Achieng",
+      "gender": "female",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 0,
+        "amountPaid": 0
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.521Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.521Z",
+      "updatedAt": "2026-07-30T18:27:48.636Z",
+      "admissionNumber": "STU/2026/0111",
+      "__v": 0,
+      "class": "6a4f66d1182406e9756d9d23",
+      "guardianInfo": {
+        "name": "Glo",
+        "phone": "Onyango",
+        "relationship": ""
+      },
+      "stream": "6a5f56fd8a6c3af9f13e3f35"
+    },
+    {
+      "_id": "6a5f3b108fe7bb788c5f14d6",
+      "firstName": "James",
+      "lastName": "Musyoka",
+      "gender": "male",
+      "status": "active",
+      "schoolFees": {
+        "totalFee": 14000,
+        "amountPaid": 8000
+      },
+      "enrollmentDate": "2026-07-21T09:25:36.526Z",
+      "academicHistory": [],
+      "createdAt": "2026-07-21T09:25:36.526Z",
+      "updatedAt": "2026-08-18T06:18:54.973Z",
+      "admissionNumber": "STU/2026/0112",
+      "__v": 0,
+      "class": "6a4f66d1182406e9756d9d23",
+      "guardianInfo": {
+        "name": "Denis",
+        "phone": "Nduku",
+        "relationship": ""
+      },
+      "stream": "6a5f56fd8a6c3af9f13e3f34"
+    }
+  ],
+  "classes": [
+    {
+      "_id": "6a4f66d1182406e9756d9d23",
+      "name": "Grade 1",
+      "code": "GRADE_1",
+      "description": "Grade 1 class",
+      "capacity": 40,
+      "streams": [
+        "6a5f56fd8a6c3af9f13e3f34",
+        "6a5f56fd8a6c3af9f13e3f35"
+      ],
+      "subjects": [
+        "6a4f66d1182406e9756d9d4a",
+        "6a4f66d1182406e9756d9d41",
+        "6a4f66d1182406e9756d9d3e",
+        "6a4f66d1182406e9756d9d44",
+        "6a4f66d1182406e9756d9d47"
+      ],
+      "createdAt": "2026-07-09T09:16:01.692Z",
+      "updatedAt": "2026-07-21T11:24:45.607Z",
+      "__v": 5,
+      "classTeacher": "6a547ae83c4594d94df6954d"
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d2c",
+      "name": "Grade 2",
+      "code": "GRADE_2",
+      "description": "Grade 2 class",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d4a",
+        "6a4f66d1182406e9756d9d41",
+        "6a4f66d1182406e9756d9d3e",
+        "6a4f66d1182406e9756d9d44",
+        "6a4f66d1182406e9756d9d47"
+      ],
+      "createdAt": "2026-07-09T09:16:01.709Z",
+      "updatedAt": "2026-07-21T06:54:33.589Z",
+      "__v": 1,
+      "classTeacher": "6a4f66d1182406e9756d9d20"
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d35",
+      "name": "Grade 3",
+      "code": "GRADE_3",
+      "description": "Grade 3 class",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d4a",
+        "6a4f66d1182406e9756d9d41",
+        "6a4f66d1182406e9756d9d3e",
+        "6a4f66d1182406e9756d9d44",
+        "6a4f66d1182406e9756d9d47"
+      ],
+      "createdAt": "2026-07-09T09:16:01.722Z",
+      "updatedAt": "2026-07-21T06:54:42.684Z",
+      "__v": 1
+    },
+    {
+      "_id": "6a54ce2950722770837f977a",
+      "name": "Grade 4",
+      "code": "GRADE_4",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "classTeacher": "6a4f66d1182406e9756d9d1d",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d47",
+        "6a4f66d1182406e9756d9d3e",
+        "6a4f66d1182406e9756d9d41",
+        "6a4f66d1182406e9756d9d4a",
+        "6a4f66d1182406e9756d9d44"
+      ],
+      "createdAt": "2026-07-13T11:38:17.123Z",
+      "updatedAt": "2026-07-21T06:54:58.967Z",
+      "__v": 1
+    },
+    {
+      "_id": "6a5f2f4f1bc2fca7f569e6cc",
+      "name": "Grade 5",
+      "code": "GRADE_5",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "classTeacher": "6a5f20137a6c6ddaabdeb03a",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a5f22c47a6c6ddaabdeb09b",
+        "6a4f66d1182406e9756d9d4a",
+        "6a4f66d1182406e9756d9d41",
+        "6a5f220f7a6c6ddaabdeb073",
+        "6a4f66d1182406e9756d9d47",
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f22e37a6c6ddaabdeb0a5",
+        "6a4f66d1182406e9756d9d3e",
+        "6a5f228c7a6c6ddaabdeb091",
+        "6a4f66d1182406e9756d9d44",
+        "6a5f22407a6c6ddaabdeb07d"
+      ],
+      "createdAt": "2026-07-21T08:35:27.800Z",
+      "updatedAt": "2026-07-21T08:35:27.800Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f2f7a1bc2fca7f569e714",
+      "name": "Grade 6",
+      "code": "GRADE_6",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "classTeacher": "6a5f1af27a6c6ddaabdeafbc",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a5f22c47a6c6ddaabdeb09b",
+        "6a4f66d1182406e9756d9d4a",
+        "6a5f24427a6c6ddaabdeb0e7",
+        "6a5f23137a6c6ddaabdeb0af",
+        "6a4f66d1182406e9756d9d41",
+        "6a5f220f7a6c6ddaabdeb073",
+        "6a5f238b7a6c6ddaabdeb0cb",
+        "6a5f23467a6c6ddaabdeb0b9",
+        "6a4f66d1182406e9756d9d47",
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f22e37a6c6ddaabdeb0a5",
+        "6a4f66d1182406e9756d9d3e",
+        "6a5f228c7a6c6ddaabdeb091",
+        "6a4f66d1182406e9756d9d44",
+        "6a5f22407a6c6ddaabdeb07d",
+        "6a5f24287a6c6ddaabdeb0dd"
+      ],
+      "createdAt": "2026-07-21T08:36:10.305Z",
+      "updatedAt": "2026-07-21T08:36:10.305Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f30081bc2fca7f569e75f",
+      "name": "Grade 7",
+      "code": "GRADE_7",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a5f22c47a6c6ddaabdeb09b",
+        "6a5f22407a6c6ddaabdeb07d",
+        "6a5f24287a6c6ddaabdeb0dd",
+        "6a4f66d1182406e9756d9d44",
+        "6a5f24427a6c6ddaabdeb0e7",
+        "6a4f66d1182406e9756d9d4a",
+        "6a5f23137a6c6ddaabdeb0af",
+        "6a5f228c7a6c6ddaabdeb091",
+        "6a4f66d1182406e9756d9d41",
+        "6a4f66d1182406e9756d9d3e",
+        "6a5f220f7a6c6ddaabdeb073",
+        "6a5f22e37a6c6ddaabdeb0a5",
+        "6a5f238b7a6c6ddaabdeb0cb",
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f23467a6c6ddaabdeb0b9",
+        "6a4f66d1182406e9756d9d47"
+      ],
+      "createdAt": "2026-07-21T08:38:32.887Z",
+      "updatedAt": "2026-07-21T08:38:32.887Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a674aa62a3e3b301d257155",
+      "name": "Grade 8",
+      "code": "GRADE_8",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a5f22c47a6c6ddaabdeb09b",
+        "6a4f66d1182406e9756d9d4a",
+        "6a5f24427a6c6ddaabdeb0e7",
+        "6a5f22e37a6c6ddaabdeb0a5",
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f23137a6c6ddaabdeb0af",
+        "6a4f66d1182406e9756d9d47",
+        "6a4f66d1182406e9756d9d41",
+        "6a5f24287a6c6ddaabdeb0dd",
+        "6a5f220f7a6c6ddaabdeb073",
+        "6a5f238b7a6c6ddaabdeb0cb",
+        "6a5f23467a6c6ddaabdeb0b9",
+        "6a5f22407a6c6ddaabdeb07d",
+        "6a4f66d1182406e9756d9d44",
+        "6a5f228c7a6c6ddaabdeb091",
+        "6a4f66d1182406e9756d9d3e"
+      ],
+      "createdAt": "2026-07-27T12:10:14.394Z",
+      "updatedAt": "2026-08-17T12:04:41.728Z",
+      "__v": 1,
+      "classTeacher": "6a82f8bebbba287186547ac8"
+    },
+    {
+      "_id": "6a674aeb2a3e3b301d2571fe",
+      "name": "Grade 9",
+      "code": "GRADE_9",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "capacity": 40,
+      "streams": [],
+      "subjects": [
+        "6a4f66d1182406e9756d9d3e",
+        "6a5f22e37a6c6ddaabdeb0a5",
+        "6a5f22c47a6c6ddaabdeb09b",
+        "6a4f66d1182406e9756d9d4a",
+        "6a5f22697a6c6ddaabdeb087",
+        "6a5f24427a6c6ddaabdeb0e7",
+        "6a5f23137a6c6ddaabdeb0af",
+        "6a4f66d1182406e9756d9d47",
+        "6a4f66d1182406e9756d9d41",
+        "6a5f24287a6c6ddaabdeb0dd",
+        "6a5f220f7a6c6ddaabdeb073",
+        "6a5f238b7a6c6ddaabdeb0cb",
+        "6a5f23467a6c6ddaabdeb0b9",
+        "6a5f22407a6c6ddaabdeb07d",
+        "6a4f66d1182406e9756d9d44",
+        "6a5f228c7a6c6ddaabdeb091"
+      ],
+      "createdAt": "2026-07-27T12:11:23.046Z",
+      "updatedAt": "2026-08-17T12:09:06.164Z",
+      "__v": 2,
+      "classTeacher": "6a82f972bbba287186547c63"
+    }
+  ],
+  "streams": [
+    {
+      "_id": "6a5f56fd8a6c3af9f13e3f35",
+      "name": "WEST",
+      "code": "WEST",
+      "class": "6a4f66d1182406e9756d9d23",
+      "createdAt": "2026-07-21T11:24:45.601Z",
+      "updatedAt": "2026-07-21T11:24:45.601Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f56fd8a6c3af9f13e3f34",
+      "name": "EAST",
+      "code": "EAST",
+      "class": "6a4f66d1182406e9756d9d23",
+      "createdAt": "2026-07-21T11:24:45.601Z",
+      "updatedAt": "2026-07-21T11:24:45.601Z",
+      "__v": 0
+    }
+  ],
+  "subjects": [
+    {
+      "_id": "6a4f66d1182406e9756d9d3e",
+      "name": "Mathematics",
+      "code": "MATH",
+      "category": "core",
+      "credits": 4,
+      "createdAt": "2026-07-09T09:16:01.747Z",
+      "updatedAt": "2026-07-09T09:16:01.747Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d41",
+      "name": "English",
+      "code": "ENG",
+      "category": "core",
+      "credits": 4,
+      "createdAt": "2026-07-09T09:16:01.752Z",
+      "updatedAt": "2026-07-09T09:16:01.752Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d44",
+      "name": "Integrated Science",
+      "code": "SCI",
+      "category": "core",
+      "credits": 3,
+      "createdAt": "2026-07-09T09:16:01.756Z",
+      "updatedAt": "2026-07-21T07:46:34.075Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d47",
+      "name": "Social Studies",
+      "code": "SST",
+      "category": "core",
+      "credits": 2,
+      "createdAt": "2026-07-09T09:16:01.761Z",
+      "updatedAt": "2026-07-09T09:16:01.761Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d4a",
+      "name": "Arts",
+      "code": "ART",
+      "category": "elective",
+      "credits": 1,
+      "createdAt": "2026-07-09T09:16:01.765Z",
+      "updatedAt": "2026-07-09T09:16:01.765Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f220f7a6c6ddaabdeb073",
+      "name": "Environmental Activities",
+      "code": "ENV",
+      "category": "elective",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:38:55.768Z",
+      "updatedAt": "2026-07-21T07:38:55.768Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f22407a6c6ddaabdeb07d",
+      "name": "Hygiene and Nutrition Activities",
+      "code": "HNA",
+      "category": "core",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:39:44.983Z",
+      "updatedAt": "2026-07-21T07:39:44.983Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f22697a6c6ddaabdeb087",
+      "name": "Religious Education",
+      "code": "CRE",
+      "category": "core",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:40:25.581Z",
+      "updatedAt": "2026-07-21T07:40:25.581Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f228c7a6c6ddaabdeb091",
+      "name": "Kiswahili",
+      "code": "SWA",
+      "category": "core",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:41:00.789Z",
+      "updatedAt": "2026-07-21T07:41:00.789Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f22c47a6c6ddaabdeb09b",
+      "name": "Agriculture",
+      "code": "AGRI",
+      "category": "elective",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:41:56.910Z",
+      "updatedAt": "2026-07-30T07:21:00.460Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f22e37a6c6ddaabdeb0a5",
+      "name": "Physical and Health Education",
+      "code": "PE",
+      "category": "elective",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:42:27.525Z",
+      "updatedAt": "2026-07-21T07:42:27.525Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f23137a6c6ddaabdeb0af",
+      "name": "Creative Arts",
+      "code": "CA",
+      "category": "optional",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:43:15.053Z",
+      "updatedAt": "2026-07-21T07:43:15.053Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f23467a6c6ddaabdeb0b9",
+      "name": "Home Science",
+      "code": "HS",
+      "category": "optional",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:44:06.502Z",
+      "updatedAt": "2026-07-21T07:44:16.435Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f238b7a6c6ddaabdeb0cb",
+      "name": "Foreign Languages",
+      "code": "FL",
+      "category": "core",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:45:15.874Z",
+      "updatedAt": "2026-07-21T07:45:15.874Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f24287a6c6ddaabdeb0dd",
+      "name": "Sports and Physical Education",
+      "code": "SPE",
+      "category": "elective",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:47:52.635Z",
+      "updatedAt": "2026-07-21T07:47:52.635Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a5f24427a6c6ddaabdeb0e7",
+      "name": "Business Studies",
+      "code": "BUS",
+      "category": "optional",
+      "credits": 1,
+      "createdAt": "2026-07-21T07:48:18.521Z",
+      "updatedAt": "2026-07-21T07:48:18.521Z",
+      "__v": 0
+    }
+  ],
+  "academicYears": [
+    {
+      "_id": "6a75bfd2e1d881cda13ba811",
+      "name": "Academic Year",
+      "year": "2026-2027",
+      "startDate": "2026-01-06T00:00:00.000Z",
+      "endDate": "2026-11-06T00:00:00.000Z",
+      "isCurrent": true,
+      "terms": [
+        "6a75c45d8c98ad10c1ca4891",
+        "6a75c4f48c98ad10c1ca48ba"
+      ],
+      "createdAt": "2026-08-07T11:21:54.270Z",
+      "updatedAt": "2026-08-07T11:43:48.703Z",
+      "__v": 0
+    }
+  ],
+  "terms": [
+    {
+      "_id": "6a4f66d1182406e9756d9d4f",
+      "name": "Term 1",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "startDate": "2025-01-15T00:00:00.000Z",
+      "endDate": "2025-04-15T00:00:00.000Z",
+      "isCurrent": true,
+      "examCategories": [],
+      "createdAt": "2026-07-09T09:16:01.774Z",
+      "updatedAt": "2026-07-09T09:16:01.774Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d51",
+      "name": "Term 2",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "startDate": "2025-05-01T00:00:00.000Z",
+      "endDate": "2025-08-15T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-07-09T09:16:01.777Z",
+      "updatedAt": "2026-07-09T09:16:01.777Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d1182406e9756d9d53",
+      "name": "Term 3",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "startDate": "2025-09-01T00:00:00.000Z",
+      "endDate": "2025-12-15T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-07-09T09:16:01.781Z",
+      "updatedAt": "2026-07-09T09:16:01.781Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75bf6be1d881cda13ba7fe",
+      "name": "Term 1",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "startDate": "2026-01-06T00:00:00.000Z",
+      "endDate": "2026-03-27T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-08-07T11:20:11.970Z",
+      "updatedAt": "2026-08-07T11:20:11.970Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c005e1d881cda13ba81a",
+      "name": "Term 1",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "startDate": "2026-08-04T00:00:00.000Z",
+      "endDate": "2026-03-27T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-08-07T11:22:45.434Z",
+      "updatedAt": "2026-08-07T11:47:32.908Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c05ae1d881cda13ba825",
+      "name": "Term 2",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "startDate": "2026-05-05T00:00:00.000Z",
+      "endDate": "2026-07-24T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-08-07T11:24:10.863Z",
+      "updatedAt": "2026-08-07T11:47:32.908Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c45d8c98ad10c1ca4891",
+      "name": "Term 1",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "startDate": "2026-01-06T00:00:00.000Z",
+      "endDate": "2026-03-26T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-08-07T11:41:17.661Z",
+      "updatedAt": "2026-08-07T11:47:32.908Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c4f48c98ad10c1ca48ba",
+      "name": "Term 2",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "startDate": "2026-05-05T00:00:00.000Z",
+      "endDate": "2026-07-24T00:00:00.000Z",
+      "isCurrent": false,
+      "examCategories": [],
+      "createdAt": "2026-08-07T11:43:48.699Z",
+      "updatedAt": "2026-08-07T11:47:32.908Z",
+      "__v": 0
+    }
+  ],
+  "assessments": [
+    {
+      "_id": "6a69cbe9b8b287c0e4043c86",
+      "name": "MOCK",
+      "code": "ENDTERM-1785318377278",
+      "type": "endTerm",
+      "weight": 100,
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "subject": "6a4f66d1182406e9756d9d3e",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "maxScore": 100,
+      "examDate": "2026-07-31T00:00:00.000Z",
+      "duration": 120,
+      "createdBy": "6a54d777b5fca3ddd5c3ad27",
+      "status": "released",
+      "releaseDate": "2026-07-29T00:00:00.000Z",
+      "isRequired": true,
+      "createdAt": "2026-07-29T09:46:17.313Z",
+      "updatedAt": "2026-08-19T08:02:18.168Z",
+      "__v": 0
+    }
+  ],
+  "marks": [
+    {
+      "_id": "6a6c651d2cc4f809899e99c8",
+      "student": "6a4f66d2182406e9756d9d73",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.082Z",
+      "createdAt": "2026-07-31T09:04:29.083Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99cb",
+      "student": "6a4f66d2182406e9756d9d7f",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.165Z",
+      "createdAt": "2026-07-31T09:04:29.165Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99ce",
+      "student": "6a4f66d2182406e9756d9d8b",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.168Z",
+      "createdAt": "2026-07-31T09:04:29.168Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99d1",
+      "student": "6a5f3b108fe7bb788c5f14ce",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.171Z",
+      "createdAt": "2026-07-31T09:04:29.171Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99d4",
+      "student": "6a5f3b108fe7bb788c5f14d2",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.174Z",
+      "createdAt": "2026-07-31T09:04:29.175Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99d7",
+      "student": "6a4f66d2182406e9756d9d97",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.178Z",
+      "createdAt": "2026-07-31T09:04:29.179Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99da",
+      "student": "6a5f3b108fe7bb788c5f14d6",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.181Z",
+      "createdAt": "2026-07-31T09:04:29.182Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99dd",
+      "student": "6a5f3b108fe7bb788c5f14b2",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.185Z",
+      "createdAt": "2026-07-31T09:04:29.185Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    },
+    {
+      "_id": "6a6c651d2cc4f809899e99e0",
+      "student": "6a5f3b108fe7bb788c5f14bb",
+      "assessment": "6a69cbe9b8b287c0e4043c86",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "class": "6a4f66d1182406e9756d9d23",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "score": 70,
+      "totalScore": 100,
+      "grade": "B",
+      "gradePoint": 10,
+      "remarks": "Good performance",
+      "gradedBy": "6a547ae73c4594d94df6954a",
+      "isApproved": true,
+      "isMissing": false,
+      "submittedAt": "2026-07-31T09:04:29.188Z",
+      "createdAt": "2026-07-31T09:04:29.188Z",
+      "updatedAt": "2026-08-07T11:16:24.949Z",
+      "__v": 0,
+      "approvedAt": "2026-08-07T11:16:24.948Z",
+      "approvedBy": "6a4f66d0182406e9756d9d10"
+    }
+  ],
+  "attendance": [
+    {
+      "_id": "6a547bae9b49a83a4e67d4b8",
+      "student": "6a4f66d2182406e9756d9d9f",
+      "class": "6a4f66d1182406e9756d9d35",
+      "date": "2026-07-12T21:00:00.000Z",
+      "status": "schoolActivity",
+      "remarks": "Drama Festivals",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-13T05:46:22.856Z",
+      "updatedAt": "2026-07-13T05:46:22.856Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a547bae9b49a83a4e67d4bb",
+      "student": "6a4f66d2182406e9756d9d93",
+      "class": "6a4f66d1182406e9756d9d35",
+      "date": "2026-07-12T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-13T05:46:22.923Z",
+      "updatedAt": "2026-07-13T05:46:22.923Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a547bae9b49a83a4e67d4be",
+      "student": "6a4f66d2182406e9756d9d87",
+      "class": "6a4f66d1182406e9756d9d35",
+      "date": "2026-07-12T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-13T05:46:22.931Z",
+      "updatedAt": "2026-07-13T05:46:22.931Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a547bae9b49a83a4e67d4c1",
+      "student": "6a4f66d2182406e9756d9d7b",
+      "class": "6a4f66d1182406e9756d9d35",
+      "date": "2026-07-12T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-13T05:46:22.939Z",
+      "updatedAt": "2026-07-13T05:46:22.939Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69c9c9b8b287c0e40439da",
+      "student": "6a4f66d2182406e9756d9d97",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-29T09:37:13.143Z",
+      "updatedAt": "2026-07-29T09:37:13.143Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69c9c9b8b287c0e40439dd",
+      "student": "6a4f66d2182406e9756d9d8b",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-29T09:37:13.343Z",
+      "updatedAt": "2026-07-29T09:37:13.343Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69c9c9b8b287c0e40439e0",
+      "student": "6a4f66d2182406e9756d9d7f",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-29T09:37:13.349Z",
+      "updatedAt": "2026-07-29T09:37:13.349Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69c9c9b8b287c0e40439e3",
+      "student": "6a4f66d2182406e9756d9d73",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-29T09:37:13.353Z",
+      "updatedAt": "2026-07-29T09:37:13.353Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b3b",
+      "student": "6a5f3b108fe7bb788c5f14ca",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.018Z",
+      "updatedAt": "2026-07-29T09:40:12.018Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b3e",
+      "student": "6a5f3b108fe7bb788c5f14c0",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.026Z",
+      "updatedAt": "2026-07-29T09:40:12.026Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b41",
+      "student": "6a5f3b108fe7bb788c5f14a9",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.029Z",
+      "updatedAt": "2026-07-29T09:40:12.029Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b44",
+      "student": "6a5f3b108fe7bb788c5f149b",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.032Z",
+      "updatedAt": "2026-07-29T09:40:12.032Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b47",
+      "student": "6a5f3b108fe7bb788c5f1496",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.036Z",
+      "updatedAt": "2026-07-29T09:40:12.036Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b4a",
+      "student": "6a5f3b108fe7bb788c5f1491",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.043Z",
+      "updatedAt": "2026-07-29T09:40:12.043Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b4d",
+      "student": "6a5f3b108fe7bb788c5f148c",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.048Z",
+      "updatedAt": "2026-07-29T09:40:12.048Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b50",
+      "student": "6a5f3b108fe7bb788c5f1474",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.051Z",
+      "updatedAt": "2026-07-29T09:40:12.051Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b53",
+      "student": "6a5f3b108fe7bb788c5f146f",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.056Z",
+      "updatedAt": "2026-07-29T09:40:12.056Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b56",
+      "student": "6a5f3b108fe7bb788c5f1454",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.063Z",
+      "updatedAt": "2026-07-29T09:40:12.063Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b59",
+      "student": "6a5f3b108fe7bb788c5f13dc",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.070Z",
+      "updatedAt": "2026-07-29T09:40:12.070Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b5c",
+      "student": "6a5f3b108fe7bb788c5f13ce",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.077Z",
+      "updatedAt": "2026-07-29T09:40:12.077Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b5f",
+      "student": "6a5f3b108fe7bb788c5f13c4",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.081Z",
+      "updatedAt": "2026-07-29T09:40:12.081Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b62",
+      "student": "6a5f3b108fe7bb788c5f1398",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.085Z",
+      "updatedAt": "2026-07-29T09:40:12.085Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b65",
+      "student": "6a5f3b108fe7bb788c5f1379",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.089Z",
+      "updatedAt": "2026-07-29T09:40:12.089Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b68",
+      "student": "6a5f3b108fe7bb788c5f134a",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.094Z",
+      "updatedAt": "2026-07-29T09:40:12.094Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b6b",
+      "student": "6a5f3b0f8fe7bb788c5f132f",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.099Z",
+      "updatedAt": "2026-07-29T09:40:12.099Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69ca7cb8b287c0e4043b6e",
+      "student": "6a5f3b0f8fe7bb788c5f132a",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-29T09:40:12.102Z",
+      "updatedAt": "2026-07-29T09:40:12.102Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043df6",
+      "student": "6a5f3b108fe7bb788c5f14ae",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.297Z",
+      "updatedAt": "2026-07-29T11:44:41.297Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043df9",
+      "student": "6a5f3b108fe7bb788c5f145d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.332Z",
+      "updatedAt": "2026-07-29T11:44:41.332Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043dfc",
+      "student": "6a5f3b108fe7bb788c5f1445",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.338Z",
+      "updatedAt": "2026-07-29T11:44:41.338Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043dff",
+      "student": "6a5f3b108fe7bb788c5f1429",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "sick",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.342Z",
+      "updatedAt": "2026-07-29T11:44:41.342Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e02",
+      "student": "6a5f3b108fe7bb788c5f1412",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "schoolActivity",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.346Z",
+      "updatedAt": "2026-07-29T11:44:41.346Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e05",
+      "student": "6a5f3b108fe7bb788c5f1401",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "sick",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.351Z",
+      "updatedAt": "2026-07-29T11:44:41.351Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e08",
+      "student": "6a5f3b108fe7bb788c5f13d7",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.354Z",
+      "updatedAt": "2026-07-29T11:44:41.354Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e0b",
+      "student": "6a5f3b108fe7bb788c5f13a6",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.357Z",
+      "updatedAt": "2026-07-29T11:44:41.357Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e0e",
+      "student": "6a5f3b108fe7bb788c5f139d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.360Z",
+      "updatedAt": "2026-07-29T11:44:41.360Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e11",
+      "student": "6a5f3b108fe7bb788c5f1345",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.363Z",
+      "updatedAt": "2026-07-29T11:44:41.363Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a69e7a9b8b287c0e4043e14",
+      "student": "6a5f3b0f8fe7bb788c5f1325",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-07-28T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-07-29T11:44:41.367Z",
+      "updatedAt": "2026-07-29T11:44:41.367Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6af2903861e62f8ecb16fb",
+      "student": "6a4f66d2182406e9756d9d97",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-29T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-30T06:43:28.987Z",
+      "updatedAt": "2026-07-30T06:43:28.987Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6af2913861e62f8ecb16fe",
+      "student": "6a4f66d2182406e9756d9d8b",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-29T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-30T06:43:29.022Z",
+      "updatedAt": "2026-07-30T06:43:29.022Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6af2913861e62f8ecb1701",
+      "student": "6a4f66d2182406e9756d9d7f",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-29T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-30T06:43:29.027Z",
+      "updatedAt": "2026-07-30T06:43:29.027Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6af2913861e62f8ecb1704",
+      "student": "6a4f66d2182406e9756d9d73",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-29T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-30T06:43:29.032Z",
+      "updatedAt": "2026-07-30T06:43:29.032Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c65ea2cc4f809899e9b19",
+      "student": "6a5f3b108fe7bb788c5f14d6",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-31T09:07:54.647Z",
+      "updatedAt": "2026-07-31T09:07:54.647Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c65eb2cc4f809899e9b1c",
+      "student": "6a5f3b108fe7bb788c5f14ce",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-31T09:07:55.116Z",
+      "updatedAt": "2026-07-31T09:07:55.116Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c65eb2cc4f809899e9b1f",
+      "student": "6a5f3b108fe7bb788c5f14b2",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-31T09:07:55.119Z",
+      "updatedAt": "2026-07-31T09:07:55.119Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c65eb2cc4f809899e9b22",
+      "student": "6a4f66d2182406e9756d9d97",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-31T09:07:55.123Z",
+      "updatedAt": "2026-07-31T09:07:55.123Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c65eb2cc4f809899e9b25",
+      "student": "6a4f66d2182406e9756d9d8b",
+      "class": "6a4f66d1182406e9756d9d23",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a547ae73c4594d94df6954a",
+      "createdAt": "2026-07-31T09:07:55.125Z",
+      "updatedAt": "2026-07-31T09:07:55.125Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d5c",
+      "student": "6a5f3b108fe7bb788c5f14ca",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.443Z",
+      "updatedAt": "2026-07-31T09:32:47.443Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d5f",
+      "student": "6a5f3b108fe7bb788c5f14c0",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.446Z",
+      "updatedAt": "2026-07-31T09:32:47.446Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d62",
+      "student": "6a5f3b108fe7bb788c5f14a9",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.449Z",
+      "updatedAt": "2026-07-31T09:32:47.449Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d65",
+      "student": "6a5f3b108fe7bb788c5f149b",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.453Z",
+      "updatedAt": "2026-07-31T09:32:47.453Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d68",
+      "student": "6a5f3b108fe7bb788c5f1496",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.456Z",
+      "updatedAt": "2026-07-31T09:32:47.456Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d6b",
+      "student": "6a5f3b108fe7bb788c5f1491",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.459Z",
+      "updatedAt": "2026-07-31T09:32:47.459Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d6e",
+      "student": "6a5f3b108fe7bb788c5f148c",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "schoolActivity",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.462Z",
+      "updatedAt": "2026-07-31T09:32:47.462Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d71",
+      "student": "6a5f3b108fe7bb788c5f1474",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.466Z",
+      "updatedAt": "2026-07-31T09:32:47.466Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d74",
+      "student": "6a5f3b108fe7bb788c5f146f",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.470Z",
+      "updatedAt": "2026-07-31T09:32:47.470Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d77",
+      "student": "6a5f3b108fe7bb788c5f1454",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.473Z",
+      "updatedAt": "2026-07-31T09:32:47.473Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d7a",
+      "student": "6a5f3b108fe7bb788c5f13dc",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.476Z",
+      "updatedAt": "2026-07-31T09:32:47.476Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d7d",
+      "student": "6a5f3b108fe7bb788c5f13ce",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.479Z",
+      "updatedAt": "2026-07-31T09:32:47.479Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d80",
+      "student": "6a5f3b108fe7bb788c5f13c4",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.482Z",
+      "updatedAt": "2026-07-31T09:32:47.482Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d83",
+      "student": "6a5f3b108fe7bb788c5f1398",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.487Z",
+      "updatedAt": "2026-07-31T09:32:47.487Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d86",
+      "student": "6a5f3b108fe7bb788c5f1379",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "sick",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.490Z",
+      "updatedAt": "2026-07-31T09:32:47.490Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d89",
+      "student": "6a5f3b108fe7bb788c5f134a",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.493Z",
+      "updatedAt": "2026-07-31T09:32:47.493Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d8c",
+      "student": "6a5f3b0f8fe7bb788c5f132f",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.497Z",
+      "updatedAt": "2026-07-31T09:32:47.497Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6bbf2cc4f809899e9d8f",
+      "student": "6a5f3b0f8fe7bb788c5f132a",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "date": "2026-07-30T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "markedBy": "6a5f1af17a6c6ddaabdeafb9",
+      "createdAt": "2026-07-31T09:32:47.500Z",
+      "updatedAt": "2026-07-31T09:32:47.500Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa39",
+      "student": "6a5f3b108fe7bb788c5f14ae",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.059Z",
+      "updatedAt": "2026-08-18T06:58:37.059Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa3c",
+      "student": "6a5f3b108fe7bb788c5f145d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.435Z",
+      "updatedAt": "2026-08-18T06:58:37.435Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa3f",
+      "student": "6a5f3b108fe7bb788c5f1445",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.483Z",
+      "updatedAt": "2026-08-18T06:58:37.483Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa42",
+      "student": "6a5f3b108fe7bb788c5f1429",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.540Z",
+      "updatedAt": "2026-08-18T06:58:37.540Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa45",
+      "student": "6a5f3b108fe7bb788c5f1412",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.655Z",
+      "updatedAt": "2026-08-18T06:58:37.655Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa48",
+      "student": "6a5f3b108fe7bb788c5f1401",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.715Z",
+      "updatedAt": "2026-08-18T06:58:37.715Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa4b",
+      "student": "6a5f3b108fe7bb788c5f13d7",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.754Z",
+      "updatedAt": "2026-08-18T06:58:37.754Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa4e",
+      "student": "6a5f3b108fe7bb788c5f13a6",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.798Z",
+      "updatedAt": "2026-08-18T06:58:37.798Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa51",
+      "student": "6a5f3b108fe7bb788c5f139d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.836Z",
+      "updatedAt": "2026-08-18T06:58:37.836Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa54",
+      "student": "6a5f3b108fe7bb788c5f1345",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.884Z",
+      "updatedAt": "2026-08-18T06:58:37.884Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a84029dcbad8b88a210fa57",
+      "student": "6a5f3b0f8fe7bb788c5f1325",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "date": "2026-08-17T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-18T06:58:37.927Z",
+      "updatedAt": "2026-08-18T06:58:37.927Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2127f00c32f83b1700c",
+      "student": "6a5f3b108fe7bb788c5f14ae",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:06.705Z",
+      "updatedAt": "2026-08-21T06:37:06.705Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b1700f",
+      "student": "6a5f3b108fe7bb788c5f145d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.040Z",
+      "updatedAt": "2026-08-21T06:37:07.040Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17012",
+      "student": "6a5f3b108fe7bb788c5f1445",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.078Z",
+      "updatedAt": "2026-08-21T06:37:07.078Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17015",
+      "student": "6a5f3b108fe7bb788c5f1429",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "excused",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.126Z",
+      "updatedAt": "2026-08-21T06:37:07.126Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17018",
+      "student": "6a5f3b108fe7bb788c5f1412",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.180Z",
+      "updatedAt": "2026-08-21T06:37:07.180Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b1701b",
+      "student": "6a5f3b108fe7bb788c5f1401",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.241Z",
+      "updatedAt": "2026-08-21T06:37:07.241Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b1701e",
+      "student": "6a5f3b108fe7bb788c5f13d7",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.295Z",
+      "updatedAt": "2026-08-21T06:37:07.295Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17021",
+      "student": "6a5f3b108fe7bb788c5f13a6",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "absent",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.355Z",
+      "updatedAt": "2026-08-21T06:37:07.355Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17024",
+      "student": "6a5f3b108fe7bb788c5f139d",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.405Z",
+      "updatedAt": "2026-08-21T06:37:07.405Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b17027",
+      "student": "6a5f3b108fe7bb788c5f1345",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.465Z",
+      "updatedAt": "2026-08-21T06:37:07.465Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f2137f00c32f83b1702a",
+      "student": "6a5f3b0f8fe7bb788c5f1325",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "date": "2026-08-20T21:00:00.000Z",
+      "status": "present",
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          0,
+          0
+        ]
+      },
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d4f",
+      "markedBy": "6a5f20137a6c6ddaabdeb037",
+      "createdAt": "2026-08-21T06:37:07.517Z",
+      "updatedAt": "2026-08-21T06:37:07.517Z",
+      "__v": 0
+    }
+  ],
+  "gradeScales": [
+    {
+      "_id": "6a4f66d2182406e9756d9d57",
+      "name": "A - Excellent",
+      "code": "A",
+      "minScore": 80,
+      "maxScore": 100,
+      "gradePoint": 12,
+      "description": "Excellent",
+      "remark": "Outstanding performance",
+      "system": "percentage",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.136Z",
+      "updatedAt": "2026-07-09T09:16:02.136Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d5a",
+      "name": "B - Good",
+      "code": "B",
+      "minScore": 70,
+      "maxScore": 79,
+      "gradePoint": 10,
+      "description": "Good",
+      "remark": "Good performance",
+      "system": "percentage",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.146Z",
+      "updatedAt": "2026-07-09T09:16:02.146Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d5d",
+      "name": "C - Satisfactory",
+      "code": "C",
+      "minScore": 60,
+      "maxScore": 69,
+      "gradePoint": 8,
+      "description": "Satisfactory",
+      "remark": "Satisfactory performance",
+      "system": "percentage",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.155Z",
+      "updatedAt": "2026-07-09T09:16:02.155Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d60",
+      "name": "D - Poor",
+      "code": "D",
+      "minScore": 50,
+      "maxScore": 59,
+      "gradePoint": 6,
+      "description": "Poor",
+      "remark": "Below average performance",
+      "system": "percentage",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.160Z",
+      "updatedAt": "2026-07-09T09:16:02.160Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d63",
+      "name": "E - Fail",
+      "code": "E",
+      "minScore": 0,
+      "maxScore": 49,
+      "gradePoint": 4,
+      "description": "Fail",
+      "remark": "Needs improvement",
+      "system": "percentage",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.165Z",
+      "updatedAt": "2026-07-09T09:16:02.165Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d66",
+      "name": "Exceeding Expectations",
+      "code": "EE",
+      "minScore": 80,
+      "maxScore": 100,
+      "gradePoint": 4,
+      "description": "Exceeding Expectations",
+      "remark": "Learner exceeds expectations",
+      "system": "cbc",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.170Z",
+      "updatedAt": "2026-07-09T09:16:02.170Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d69",
+      "name": "Meeting Expectations",
+      "code": "ME",
+      "minScore": 60,
+      "maxScore": 79,
+      "gradePoint": 3,
+      "description": "Meeting Expectations",
+      "remark": "Learner meets expectations",
+      "system": "cbc",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.176Z",
+      "updatedAt": "2026-07-09T09:16:02.176Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d6c",
+      "name": "Approaching Expectations",
+      "code": "AE",
+      "minScore": 40,
+      "maxScore": 59,
+      "gradePoint": 2,
+      "description": "Approaching Expectations",
+      "remark": "Learner approaching expectations",
+      "system": "cbc",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.180Z",
+      "updatedAt": "2026-07-09T09:16:02.180Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9d6f",
+      "name": "Below Expectations",
+      "code": "BE",
+      "minScore": 0,
+      "maxScore": 39,
+      "gradePoint": 1,
+      "description": "Below Expectations",
+      "remark": "Learner below expectations",
+      "system": "cbc",
+      "isActive": true,
+      "createdAt": "2026-07-09T09:16:02.184Z",
+      "updatedAt": "2026-07-09T09:16:02.184Z",
+      "__v": 0
+    }
+  ],
+  "reportCards": [
+    {
+      "_id": "6a75c791fe487c652a85fc6d",
+      "student": "6a4f66d2182406e9756d9d8b",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.529Z",
+      "createdAt": "2026-08-07T11:54:57.541Z",
+      "updatedAt": "2026-08-07T11:54:57.541Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c791fe487c652a85fc81",
+      "student": "6a4f66d2182406e9756d9d97",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.707Z",
+      "createdAt": "2026-08-07T11:54:57.708Z",
+      "updatedAt": "2026-08-07T11:54:57.708Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c791fe487c652a85fc95",
+      "student": "6a5f3b108fe7bb788c5f14b2",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.822Z",
+      "createdAt": "2026-08-07T11:54:57.824Z",
+      "updatedAt": "2026-08-07T11:54:57.824Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c791fe487c652a85fca9",
+      "student": "6a5f3b108fe7bb788c5f14ce",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.884Z",
+      "createdAt": "2026-08-07T11:54:57.885Z",
+      "updatedAt": "2026-08-07T11:54:57.885Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c791fe487c652a85fcbd",
+      "student": "6a5f3b108fe7bb788c5f14d6",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.941Z",
+      "createdAt": "2026-08-07T11:54:57.943Z",
+      "updatedAt": "2026-08-07T11:54:57.943Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c791fe487c652a85fcd1",
+      "student": "6a4f66d2182406e9756d9d73",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:57.988Z",
+      "createdAt": "2026-08-07T11:54:57.989Z",
+      "updatedAt": "2026-08-07T11:54:57.989Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c792fe487c652a85fce5",
+      "student": "6a4f66d2182406e9756d9d7f",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:58.043Z",
+      "createdAt": "2026-08-07T11:54:58.043Z",
+      "updatedAt": "2026-08-07T11:54:58.043Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c792fe487c652a85fcf9",
+      "student": "6a5f3b108fe7bb788c5f14bb",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:58.095Z",
+      "createdAt": "2026-08-07T11:54:58.096Z",
+      "updatedAt": "2026-08-07T11:54:58.096Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a75c792fe487c652a85fd0d",
+      "student": "6a5f3b108fe7bb788c5f14d2",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "subjects": [],
+      "totalScore": 0,
+      "averageScore": 0,
+      "grade": "E",
+      "gradePoint": 4,
+      "position": 0,
+      "classSize": 9,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "generatedBy": "6a82c503440855807a3fc839",
+      "isPublished": false,
+      "templateVersion": "1.0",
+      "generatedAt": "2026-08-07T11:54:58.146Z",
+      "createdAt": "2026-08-07T11:54:58.147Z",
+      "updatedAt": "2026-08-19T10:31:34.913Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a87f3be02c975aa7189744b",
+      "term": "6a4f66d1182406e9756d9d51",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "student": "6a5f3b0f8fe7bb788c5f1325",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:14.553Z",
+      "generatedAt": "2026-08-21T06:44:14.563Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:14.553Z"
+    },
+    {
+      "_id": "6a87f3bf02c975aa7189744c",
+      "student": "6a5f3b108fe7bb788c5f1345",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:15.122Z",
+      "generatedAt": "2026-08-21T06:44:15.124Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:15.122Z"
+    },
+    {
+      "_id": "6a87f3bf02c975aa7189744d",
+      "student": "6a5f3b108fe7bb788c5f139d",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:15.247Z",
+      "generatedAt": "2026-08-21T06:44:15.249Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:15.247Z"
+    },
+    {
+      "_id": "6a87f3bf02c975aa7189744e",
+      "student": "6a5f3b108fe7bb788c5f13a6",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:15.437Z",
+      "generatedAt": "2026-08-21T06:44:15.438Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:15.437Z"
+    },
+    {
+      "_id": "6a87f3bf02c975aa7189744f",
+      "student": "6a5f3b108fe7bb788c5f13d7",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:15.572Z",
+      "generatedAt": "2026-08-21T06:44:15.573Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:15.572Z"
+    },
+    {
+      "_id": "6a87f3bf02c975aa71897450",
+      "student": "6a5f3b108fe7bb788c5f1401",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:15.784Z",
+      "generatedAt": "2026-08-21T06:44:15.785Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:15.784Z"
+    },
+    {
+      "_id": "6a87f3c002c975aa71897451",
+      "student": "6a5f3b108fe7bb788c5f1412",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:16.013Z",
+      "generatedAt": "2026-08-21T06:44:16.018Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:16.013Z"
+    },
+    {
+      "_id": "6a87f3c002c975aa71897452",
+      "student": "6a5f3b108fe7bb788c5f1429",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:16.158Z",
+      "generatedAt": "2026-08-21T06:44:16.159Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:16.158Z"
+    },
+    {
+      "_id": "6a87f3c002c975aa71897453",
+      "term": "6a4f66d1182406e9756d9d51",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "student": "6a5f3b108fe7bb788c5f1445",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:16.372Z",
+      "generatedAt": "2026-08-21T06:44:16.374Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:16.372Z"
+    },
+    {
+      "_id": "6a87f3c002c975aa71897454",
+      "term": "6a4f66d1182406e9756d9d51",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "student": "6a5f3b108fe7bb788c5f145d",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:16.659Z",
+      "generatedAt": "2026-08-21T06:44:16.667Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:16.659Z"
+    },
+    {
+      "_id": "6a87f3c002c975aa71897455",
+      "student": "6a5f3b108fe7bb788c5f14ae",
+      "academicYear": "6a75bfd2e1d881cda13ba811",
+      "term": "6a4f66d1182406e9756d9d51",
+      "__v": 0,
+      "attendanceSummary": {
+        "totalDays": 0,
+        "present": 0,
+        "absent": 0,
+        "excused": 0,
+        "percentage": 0
+      },
+      "averageScore": 0,
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "classSize": 11,
+      "createdAt": "2026-08-21T06:44:16.882Z",
+      "generatedAt": "2026-08-21T06:44:16.885Z",
+      "generatedBy": "6a4f66d0182406e9756d9d10",
+      "grade": "E",
+      "gradePoint": 4,
+      "isPublished": false,
+      "position": 0,
+      "subjects": [],
+      "templateVersion": "1.0",
+      "totalScore": 0,
+      "updatedAt": "2026-08-21T06:44:16.882Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "6a8557c4e16fab28cc43f775",
+      "recipient": "6a4f66d1182406e9756d9d1a",
+      "type": "result",
+      "title": "Marks approved",
+      "message": "1 marks you entered have been approved",
+      "isRead": false,
+      "link": "/marks",
+      "sentBy": "6a82c503440855807a3fc839",
+      "createdAt": "2026-08-19T07:14:12.590Z",
+      "__v": 0,
+      "updatedAt": "2026-08-19T07:14:12.592Z"
+    }
+  ],
+  "teacherAssignments": [
+    {
+      "_id": "6a4f66d2182406e9756d9da2",
+      "teacher": "6a4f66d1182406e9756d9d1d",
+      "class": "6a4f66d1182406e9756d9d23",
+      "subject": "6a4f66d1182406e9756d9d3e",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "isClassTeacher": true,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-09T09:16:02.299Z",
+      "updatedAt": "2026-07-31T07:45:22.019Z",
+      "__v": 0,
+      "teacherRole": "subject_teacher",
+      "term": "6a4f66d1182406e9756d9d51"
+    },
+    {
+      "_id": "6a4f66d2182406e9756d9da5",
+      "teacher": "6a4f66d1182406e9756d9d20",
+      "class": "6a4f66d1182406e9756d9d2c",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-09T09:16:02.303Z",
+      "updatedAt": "2026-07-31T07:45:13.886Z",
+      "__v": 0,
+      "teacherRole": "subject_teacher",
+      "term": "6a4f66d1182406e9756d9d51"
+    },
+    {
+      "_id": "6a6b0279ee3a2c4e66cc7171",
+      "teacher": "6a547ae83c4594d94df6954d",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f34",
+      "teacherRole": "class_teacher",
+      "isClassTeacher": true,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-30T07:51:21.974Z",
+      "updatedAt": "2026-07-31T07:40:53.736Z",
+      "__v": 0,
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "term": "6a4f66d1182406e9756d9d51"
+    },
+    {
+      "_id": "6a6b049cee3a2c4e66cc73b4",
+      "teacher": "6a6b0472ee3a2c4e66cc726a",
+      "class": "6a4f66d1182406e9756d9d23",
+      "stream": "6a5f56fd8a6c3af9f13e3f35",
+      "teacherRole": "class_teacher",
+      "isClassTeacher": true,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-30T08:00:28.734Z",
+      "updatedAt": "2026-07-31T09:50:01.839Z",
+      "__v": 0,
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "subject": "6a5f22697a6c6ddaabdeb087",
+      "term": "6a4f66d1182406e9756d9d51"
+    },
+    {
+      "_id": "6a6c51ab311dd3308d05f995",
+      "teacher": "6a5f20137a6c6ddaabdeb03a",
+      "class": "6a674aa62a3e3b301d257155",
+      "subject": "6a4f66d1182406e9756d9d47",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "teacherRole": "subject_teacher",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-31T07:41:31.973Z",
+      "updatedAt": "2026-07-31T07:41:31.973Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c527d311dd3308d05f9ce",
+      "teacher": "6a5f1af27a6c6ddaabdeafbc",
+      "class": "6a674aeb2a3e3b301d2571fe",
+      "subject": "6a4f66d1182406e9756d9d3e",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "teacherRole": "subject_teacher",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-31T07:45:01.065Z",
+      "updatedAt": "2026-07-31T07:45:01.065Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c52d2311dd3308d05fa79",
+      "teacher": "6a547ae83c4594d94df6954d",
+      "class": "6a5f30081bc2fca7f569e75f",
+      "subject": "6a4f66d1182406e9756d9d41",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "teacherRole": "subject_teacher",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-31T07:46:26.022Z",
+      "updatedAt": "2026-07-31T07:46:26.022Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6f392cc4f809899ea122",
+      "teacher": "6a5f1af27a6c6ddaabdeafbc",
+      "class": "6a5f2f4f1bc2fca7f569e6cc",
+      "subject": "6a4f66d1182406e9756d9d3e",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "teacherRole": "subject_teacher",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-31T09:47:37.903Z",
+      "updatedAt": "2026-07-31T09:47:37.903Z",
+      "__v": 0
+    },
+    {
+      "_id": "6a6c6fb12cc4f809899ea2c0",
+      "teacher": "6a6b0472ee3a2c4e66cc726a",
+      "class": "6a5f2f7a1bc2fca7f569e714",
+      "subject": "6a5f228c7a6c6ddaabdeb091",
+      "academicYear": "6a4f66d1182406e9756d9d4d",
+      "term": "6a4f66d1182406e9756d9d51",
+      "teacherRole": "subject_teacher",
+      "isClassTeacher": false,
+      "assignedBy": "6a4f66d0182406e9756d9d10",
+      "createdAt": "2026-07-31T09:49:37.786Z",
+      "updatedAt": "2026-07-31T09:49:37.786Z",
+      "__v": 0
+    }
+  ],
+  "exportedAt": "2026-09-23T06:26:22.614Z"
+}

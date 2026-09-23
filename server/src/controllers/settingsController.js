@@ -17,6 +17,7 @@ const TeacherAssignment = require('../models/TeacherAssignment');
 const Stream = require('../models/Stream');
 const path = require('path');
 const fs = require('fs');
+const mongoose = require('mongoose');
 
 exports.getSchoolSettings = async (req, res) => {
   try {
@@ -225,32 +226,59 @@ exports.restoreDatabase = async (req, res) => {
   }
 };
 
+const buildAuditQuery = async (queryParams) => {
+  const {
+    user: userId,
+    action,
+    resource,
+    startDate,
+    endDate,
+  } = queryParams;
+
+  const query = {};
+
+  if (userId) {
+    const regex = new RegExp(userId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
+    const conditions = [
+      { firstName: regex },
+      { lastName: regex },
+      { email: regex },
+    ];
+    if (mongoose.isValidObjectId(userId)) {
+      conditions.push({ _id: userId });
+    }
+    const matchedUserIds = await User.find({ $or: conditions }).distinct('_id');
+    if (matchedUserIds.length === 0) {
+      query.user = { _id: null };
+    } else {
+      query.user = { $in: matchedUserIds };
+    }
+  }
+
+  if (action) query.action = { $regex: action, $options: 'i' };
+  if (resource) query.resource = resource;
+  if (startDate || endDate) {
+    query.timestamp = {};
+    if (startDate) query.timestamp.$gte = new Date(startDate);
+    if (endDate) {
+      const end = new Date(endDate);
+      end.setHours(23, 59, 59, 999);
+      query.timestamp.$lte = end;
+    }
+  }
+
+  return query;
+};
+
 exports.getAuditLogs = async (req, res) => {
   try {
     const {
       page = 1,
       limit = 50,
-      user: userId,
-      action,
-      resource,
-      startDate,
-      endDate,
       sort = '-timestamp',
     } = req.query;
 
-    const query = {};
-    if (userId) query.user = userId;
-    if (action) query.action = { $regex: action, $options: 'i' };
-    if (resource) query.resource = resource;
-    if (startDate || endDate) {
-      query.timestamp = {};
-      if (startDate) query.timestamp.$gte = new Date(startDate);
-      if (endDate) {
-        const end = new Date(endDate);
-        end.setHours(23, 59, 59, 999);
-        query.timestamp.$lte = end;
-      }
-    }
+    const query = await buildAuditQuery(req.query);
 
     const skip = (parseInt(page) - 1) * parseInt(limit);
 
@@ -275,6 +303,53 @@ exports.getAuditLogs = async (req, res) => {
         },
       },
     });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+exports.exportAuditLogs = async (req, res) => {
+  try {
+    if (req.query.export !== 'csv') {
+      return exports.getAuditLogs(req, res);
+    }
+
+    const query = await buildAuditQuery(req.query);
+
+    const logs = await AuditLog.find(query)
+      .populate('user', 'firstName lastName email role')
+      .sort('-timestamp');
+
+    const escapeCsv = (value) => {
+      if (value == null) return '';
+      const str = typeof value === 'object' ? JSON.stringify(value) : String(value);
+      if (/[",\n]/.test(str)) return `"${str.replace(/"/g, '""')}"`;
+      return str;
+    };
+
+    const headers = ['User', 'Action', 'Resource', 'Resource ID', 'Details', 'IP Address', 'User Agent', 'Timestamp'];
+
+    const rows = logs.map((log) => {
+      const userName = log.user && typeof log.user === 'object'
+        ? log.user.fullName || `${log.user.firstName || ''} ${log.user.lastName || ''}`.trim() || log.user.email
+        : log.user || 'System';
+      return [
+        escapeCsv(userName),
+        escapeCsv(log.action),
+        escapeCsv(log.resource),
+        escapeCsv(log.resourceId),
+        escapeCsv(log.details),
+        escapeCsv(log.ipAddress),
+        escapeCsv(log.userAgent),
+        escapeCsv(log.timestamp ? new Date(log.timestamp).toISOString() : ''),
+      ].join(',');
+    });
+
+    const csv = [headers.join(','), ...rows].join('\n');
+
+    res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+    res.setHeader('Content-Disposition', `attachment; filename="audit-logs-${new Date().toISOString().split('T')[0]}.csv"`);
+    res.status(200).send(csv);
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }

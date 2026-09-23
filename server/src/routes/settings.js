@@ -9,7 +9,8 @@ const {
   uploadLogo,
   backupDatabase,
   restoreDatabase,
-  getAuditLogs
+  getAuditLogs,
+  exportAuditLogs
 } = require('../controllers/settingsController');
 const { protect } = require('../middleware/auth');
 const { authorize } = require('../middleware/rbac');
@@ -92,6 +93,6 @@ router.get('/backup/export', protect, authorize('headteacher'), async (req, res)
 router.post('/backup/import', protect, authorize('headteacher'), auditLogger, restoreDatabase);
 router.post('/restore', protect, authorize('headteacher'), auditLogger, restoreDatabase);
 router.get('/audit-logs', protect, authorize('headteacher'), getAuditLogs);
-router.get('/audit-logs/export', protect, authorize('headteacher'), getAuditLogs);
+router.get('/audit-logs/export', protect, authorize('headteacher'), exportAuditLogs);
 
 module.exports = router;

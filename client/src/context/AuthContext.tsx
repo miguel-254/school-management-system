@@ -2,6 +2,9 @@ import { createContext, useContext, useState, useEffect, useCallback, type React
 import api from '../api/axios';
 import type { User } from '../types';
 
+const IDLE_TIMEOUT = 30 * 60 * 1000;
+const IDLE_EVENTS = ['mousemove', 'mousedown', 'keydown', 'click', 'touchstart', 'touchmove'] as const;
+
 type TeacherSubRole = 'class_teacher' | 'subject_teacher' | 'academic_teacher';
 
 interface AuthState {
@@ -76,6 +79,30 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     localStorage.removeItem('user');
     setState({ user: null, token: null, loading: false, error: null });
   }, []);
+
+  useEffect(() => {
+    if (!state.token || !state.user) return;
+
+    let idleTimer: number | undefined;
+
+    const resetIdleTimer = () => {
+      window.clearTimeout(idleTimer);
+      idleTimer = window.setTimeout(() => logout(), IDLE_TIMEOUT);
+    };
+
+    const handleActivity = () => resetIdleTimer();
+
+    IDLE_EVENTS.forEach((event) => window.addEventListener(event, handleActivity, { passive: true }));
+    document.addEventListener('scroll', handleActivity, true);
+
+    resetIdleTimer();
+
+    return () => {
+      window.clearTimeout(idleTimer);
+      IDLE_EVENTS.forEach((event) => window.removeEventListener(event, handleActivity));
+      document.removeEventListener('scroll', handleActivity, true);
+    };
+  }, [state.token, state.user, logout]);
 
   const role = state.user?.role;
   const isHeadteacher = role === 'headteacher';
